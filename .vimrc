@@ -25,6 +25,11 @@ set noswapfile
 
 set number                    
 
+"Netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_winsize = 20
+
 "Always show at least one line above/below the cursor
 if !&scrolloff
   set scrolloff=12
