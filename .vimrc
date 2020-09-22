@@ -59,3 +59,6 @@ nnoremap ,ain :-1read $HOME/.vim/.ruby_snippets/.assert_ins.rb<CR>jddkea<space>
 nnoremap ,aic :-1read $HOME/.vim/.ruby_snippets/.assert_inc.rb<CR>jddkea<space>
 nnoremap ,ae :-1read $HOME/.vim/.ruby_snippets/.assert_eq.rb<CR>jddkea<space>
 nnoremap ,an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
+
+" Get persisted bit from pry session
+nnoremap <leader>p :.! cat /tmp/pry-output.json \| jq .<CR>
