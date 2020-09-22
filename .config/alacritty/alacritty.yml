@@ -1,0 +1,20 @@
+window:
+  dimensions:
+   columns: 85
+   lines: 50
+
+font:
+  normal:
+    family: Fira Mono for Powerline
+  bold:
+    family: Fira Mono for Powerline
+  italic:
+    family: Fira Mono for Powerline
+  bold_italic:
+    family: Fira Mono for Powerline
+  use_thin_strokes: false
+  size: 18.0
+
+# colors:
+#   primary:
+#     background: '#2A2A2A'

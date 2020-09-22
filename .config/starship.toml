@@ -1,0 +1,35 @@
+# Replace the "❯" symbol in the prompt with "➜"
+[character]
+symbol = '➜'
+error_symbol = "✗"
+use_symbol_for_status = true
+style_success = 'bright-green'
+style_failure = 'bright-red'
+
+[line_break]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[directory]
+# style = 'bold #91A4E5'
+
+[git_branch]
+# style = 'bold #C792D5'
+
+[python]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+# Color Bin
+
+# style = 'bold #ff7c00' # Orange
+# style = 'bold #8DD3BF' # Cyan...similar to OG directory but a little darker
+# style = 'bold #CDADCD' # Light pink/purple
+# style = 'bold #91A4E5' # Nice purple-ish blue

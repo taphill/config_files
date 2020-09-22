@@ -1,0 +1,7 @@
+[user]
+	name = Taylor Phillips
+	email = taylorscottphillips@gmail.com
+[alias]
+	s = status
+  a = add
+  c = commit -m
