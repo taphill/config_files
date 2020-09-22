@@ -41,7 +41,6 @@ set path+=**
 set wildmenu
 
 "Set key commands
-map <S-n> :NERDTreeToggle<CR>
 nnoremap <S-H> <C-W><C-H>
 nnoremap <S-L> <C-W><C-L>
 
@@ -61,6 +60,8 @@ nnoremap ,ae :-1read $HOME/.vim/.ruby_snippets/.assert_eq.rb<CR>jddkea<space>
 nnoremap ,an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
 
 nnoremap ,trim :%s/\s\+$//<CR>
+nnoremap ,s :set hlsearch<CR>
+nnoremap ,so :set nohlsearch<CR>
 
 " Get persisted bit from pry session
 " nnoremap <leader>p :.! cat /tmp/pry-output.json \| jq .<CR>
