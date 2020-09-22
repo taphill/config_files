@@ -59,6 +59,8 @@ nnoremap ,aic :-1read $HOME/.vim/.ruby_snippets/.assert_inc.rb<CR>jddkea<space>
 nnoremap ,ae :-1read $HOME/.vim/.ruby_snippets/.assert_eq.rb<CR>jddkea<space>
 nnoremap ,an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
 
+nnoremap ,rake :-1read $HOME/.vim/.ruby_snippets/.rakefile.rb<CR> 
+
 nnoremap ,trim :%s/\s\+$//<CR>
 nnoremap ,s :set hlsearch<CR>
 nnoremap ,so :set nohlsearch<CR>
