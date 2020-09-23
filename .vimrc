@@ -5,10 +5,34 @@ colorscheme delek
 syntax on
 filetype plugin on
 
-"lightline stuff
+"Statusline stuff
+"run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
 set laststatus=2
 set ttimeout ttimeoutlen=30
 set noshowmode
+
+set statusline=
+set statusline+=%#Cursor#%{(mode()=='n')?'\ \ NORMAL\ ':''}
+set statusline+=%#DiffText#%{(mode()=='i')?'\ \ INSERT\ ':''}
+set statusline+=%#DiffDelete#%{(mode()=='r')?'\ \ RPLACE\ ':''}
+set statusline+=%#WildMenu#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+set statusline+=%#Cursor#\ %n\                                 " buffer number
+set statusline+=%#Visual#                                      " colour
+set statusline+=%{&paste?'\ PASTE\ ':''}
+set statusline+=%{&spell?'\ SPELL\ ':''}
+set statusline+=%#WarningMsg#                                  " colour
+set statusline+=%R                                             " readonly flag
+set statusline+=%M                                             " modified [+] flag
+set statusline+=%#Cursor#                                      " colour
+set statusline+=%#CursorLine#                                  " colour
+set statusline+=\ %t\                                          " short file name
+set statusline+=%=                                             " right align
+set statusline+=%#CursorLine#                                  " colour
+set statusline+=\ %Y\                                          " file type
+set statusline+=%#Title#                                       " colour
+set statusline+=\ %3l:%-2c\                                    " line + column
+set statusline+=%#Cursor#                                      " colour
+set statusline+=\ %3p%%\                                       " percentage
 
 "Backspace through anything in insert mode
 set backspace=indent,eol,start
