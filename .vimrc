@@ -70,6 +70,7 @@ set path+=**
 set wildmenu
 
 "Set key commands
+nnoremap <C-t> :tabn<CR>
 nnoremap <S-H> <C-W><C-H>
 nnoremap <S-L> <C-W><C-L>
 
