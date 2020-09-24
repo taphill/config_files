@@ -16,23 +16,23 @@ let g:colors_name = "nord"
 let s:nord_vim_version="0.15.0"
 set background=dark
 
-let s:nord0_gui = "#2E3440"
-let s:nord1_gui = "#3B4252"
+let s:nord0_gui = "#2E3440"            " Background
+let s:nord1_gui = "#3B4252"            " Statuslines
 let s:nord2_gui = "#434C5E"
-let s:nord3_gui = "#4C566A"
+let s:nord3_gui = "#4C566A"            " Number ruler
 let s:nord3_gui_bright = "#616E88"
-let s:nord4_gui = "#D8DEE9"
+let s:nord4_gui = "#D8DEE9"            " Text
 let s:nord5_gui = "#E5E9F0"
-let s:nord6_gui = "#ECEFF4"
-let s:nord7_gui = "#8FBCBB"
-let s:nord8_gui = "#88C0D0"
-let s:nord9_gui = "#81A1C1"
+let s:nord6_gui = "#B48EAD"            " Symbols
+let s:nord7_gui = "#EBCB8B"            " Class/Module names
+let s:nord8_gui = "#88C0D0"            " Method/Folder names
+let s:nord9_gui = "#81A1C1"            " Keywords
 let s:nord10_gui = "#5E81AC"
 let s:nord11_gui = "#BF616A"
 let s:nord12_gui = "#D08770"
 let s:nord13_gui = "#EBCB8B"
-let s:nord14_gui = "#A3BE8C"
-let s:nord15_gui = "#B48EAD"
+let s:nord14_gui = "#A3BE8C"           " Strings
+let s:nord15_gui = "#EDBB99"           " Nums
 
 let s:nord1_term = "0"
 let s:nord3_term = "8"
@@ -481,7 +481,7 @@ hi! link pythonBuiltin Type
 hi! link pythonEscape SpecialChar
 
 call s:hi("rubyConstant", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", s:bold, "")
+call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", "", "")
 hi! link rubyAttribute Identifier
 hi! link rubyBlockParameterList Operator
 hi! link rubyInterpolationDelimiter Keyword
