@@ -17,14 +17,14 @@ set noshowmode
 
 set statusline=
 set statusline+=%#Cursor#%{(mode()=='n')?'\ \ NORMAL\ ':''}
-set statusline+=%#DiffText#%{(mode()=='i')?'\ \ INSERT\ ':''}
+set statusline+=%#DiffAdd#%{(mode()=='i')?'\ \ INSERT\ ':''}
 set statusline+=%#DiffDelete#%{(mode()=='r')?'\ \ RPLACE\ ':''}
 set statusline+=%#WildMenu#%{(mode()=='v')?'\ \ VISUAL\ ':''}
 set statusline+=%#Cursor#\ %n\                                 " buffer number
 set statusline+=%#Visual#                                      " colour
 set statusline+=%{&paste?'\ PASTE\ ':''}
 set statusline+=%{&spell?'\ SPELL\ ':''}
-set statusline+=%#WarningMsg#                                  " colour
+set statusline+=%#DiffChange#                                  " colour
 set statusline+=%R                                             " readonly flag
 set statusline+=%M                                             " modified [+] flag
 set statusline+=%#Cursor#                                      " colour
