@@ -1,6 +1,10 @@
 set nocompatible
 
-colorscheme delek
+if has('termguicolors')
+  set termguicolors
+endif
+
+colorscheme nord 
 
 syntax on
 filetype plugin on
