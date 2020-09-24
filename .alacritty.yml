@@ -17,14 +17,14 @@ font:
 
 colors:
   primary:
-    background: '#2e3440'
+    background: '#1D2128'
     foreground: '#d8dee9'
     dim_foreground: '#a5abb6'
   cursor:
-    text: '#2e3440'
+    text: '#1D2128'
     cursor: '#d8dee9'
   vi_mode_cursor:
-    text: '#2e3440'
+    text: '#1D2128'
     cursor: '#d8dee9'
   selection:
     text: CellForeground
