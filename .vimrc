@@ -4,7 +4,8 @@ if has('termguicolors')
   set termguicolors
 endif
 
-colorscheme nord 
+set background=dark
+colorscheme solarized8_flat 
 
 syntax on
 filetype plugin on
@@ -73,12 +74,19 @@ set path+=**
 "Display all matching files when we tab complete
 set wildmenu
 
-"Set key commands
+"Key Commands
 nnoremap <C-t> :tabn<CR>
 nnoremap <S-H> <C-W><C-H>
 nnoremap <S-L> <C-W><C-L>
 
-"Snippets
+"Vim Commands
+nnoremap ,trim :%s/\s\+$//<CR>
+nnoremap ,s :set hlsearch<CR>
+nnoremap ,so :set nohlsearch<CR>
+
+vnoremap ,c :%y+<CR>
+
+"Code Snippets
 nnoremap ,b :-1read $HOME/.vim/.ruby_snippets/.pry.rb<CR>
 
 nnoremap ,init :-1read $HOME/.vim/.ruby_snippets/.def_initialize.rb<CR>jjjddkkk$i
@@ -94,10 +102,6 @@ nnoremap ,ae :-1read $HOME/.vim/.ruby_snippets/.assert_eq.rb<CR>jddkea<space>
 nnoremap ,an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
 
 nnoremap ,rake :-1read $HOME/.vim/.ruby_snippets/.rakefile.rb<CR> 
-
-nnoremap ,trim :%s/\s\+$//<CR>
-nnoremap ,s :set hlsearch<CR>
-nnoremap ,so :set nohlsearch<CR>
 
 " Get persisted bit from pry session
 " nnoremap <leader>p :.! cat /tmp/pry-output.json \| jq .<CR>
