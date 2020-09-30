@@ -16,7 +16,7 @@ let g:colors_name = "nord"
 let s:nord_vim_version="0.15.0"
 set background=dark
 
-let s:nord0_gui = "#1D2128"            " Background
+let s:nord0_gui = "#2E3440"            " Background
 let s:nord1_gui = "#3B4252"            " Statuslines
 let s:nord2_gui = "#434C5E"
 let s:nord3_gui = "#4C566A"            " Number ruler
