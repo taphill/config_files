@@ -5,7 +5,7 @@ if has('termguicolors')
 endif
 
 set background=dark
-colorscheme solarized8_flat 
+colorscheme nord 
 
 syntax on
 filetype plugin on
@@ -85,6 +85,7 @@ nnoremap ,s :set hlsearch<CR>
 nnoremap ,so :set nohlsearch<CR>
 
 vnoremap ,c :%y+<CR>
+vnoremap ,r "hy:%s/<C-r>h//g<left><left>
 
 "Code Snippets
 nnoremap ,b :-1read $HOME/.vim/.ruby_snippets/.pry.rb<CR>
