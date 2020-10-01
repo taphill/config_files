@@ -104,5 +104,7 @@ nnoremap ,an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
 
 nnoremap ,rake :-1read $HOME/.vim/.ruby_snippets/.rakefile.rb<CR> 
 
+nnoremap ,html :-1read $HOME/.vim/.html_snippets/.doctype.html<CR>
+
 " Get persisted bit from pry session
 " nnoremap <leader>p :.! cat /tmp/pry-output.json \| jq .<CR>
