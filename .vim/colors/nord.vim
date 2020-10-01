@@ -21,7 +21,7 @@ let s:nord1_gui = "#3B4252"            " Statuslines
 let s:nord2_gui = "#434C5E"
 let s:nord3_gui = "#4C566A"            " Number ruler
 let s:nord3_gui_bright = "#616E88"
-let s:nord4_gui = "#D8DEE9"            " Text
+let s:nord4_gui = "#839496"            " Text
 let s:nord5_gui = "#E5E9F0"
 let s:nord6_gui = "#B48EAD"            " Symbols
 let s:nord7_gui = "#EBCB8B"            " Class/Module names
@@ -32,7 +32,7 @@ let s:nord11_gui = "#BF616A"
 let s:nord12_gui = "#D08770"
 let s:nord13_gui = "#EBCB8B"
 let s:nord14_gui = "#A3BE8C"           " Strings
-let s:nord15_gui = "#EDBB99"           " Nums
+let s:nord15_gui = "#EDBB99"           " Nums 
 
 let s:nord1_term = "0"
 let s:nord3_term = "8"
