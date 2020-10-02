@@ -74,6 +74,10 @@ set path+=**
 "Display all matching files when we tab complete
 set wildmenu
 
+"Emmet shortcuts
+let g:user_emmet_mode = 'n'
+let g:user_emmet_leader_key = ','
+
 "Key Commands
 nnoremap <C-t> :tabn<CR>
 nnoremap <S-H> <C-W><C-H>
