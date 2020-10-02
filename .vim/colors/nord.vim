@@ -27,10 +27,10 @@ let s:nord6_gui = "#ffc68d"            " Symbols
 let s:nord7_gui = "#e7cdfb"            " Class/Module names
 let s:nord8_gui = "#a3c38b"            " Method/Folder names
 let s:nord9_gui = "#00a69f"            " Keywords
-let s:nord10_gui = "#5E81AC"
+let s:nord10_gui = "#00a69f"           " Define -- ruby
 let s:nord11_gui = "#BF616A"
-let s:nord12_gui = "#D08770"
-let s:nord13_gui = "#EBCB8B"
+let s:nord12_gui = "#e7cdfb"           " Instance variable -- ruby
+let s:nord13_gui = "#59FF00"           " Special Character
 let s:nord14_gui = "#e98885"           " Strings
 let s:nord15_gui = "#a6cae2"           " Nums 
 
@@ -482,6 +482,8 @@ hi! link pythonEscape SpecialChar
 
 call s:hi("rubyConstant", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", "", "")
+call s:hi("rubyInstanceVariable", s:nord12_gui, "", s:nord12_term, "", "", "")
+call s:hi("rubyDefine", s:nord10_gui, "", s:nord10_term, "", "", "")
 hi! link rubyAttribute Identifier
 hi! link rubyBlockParameterList Operator
 hi! link rubyInterpolationDelimiter Keyword
