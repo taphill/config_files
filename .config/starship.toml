@@ -1,10 +1,7 @@
 # Replace the "❯" symbol in the prompt with "➜"
 [character]
-symbol = '➜'
-error_symbol = "✗"
-use_symbol_for_status = true
-style_success = 'bright-green'
-style_failure = 'bright-red'
+success_symbol = "[➜](cyan) "
+vicmd_symbol = "[V](green) "
 
 [line_break]
 disabled = true
@@ -17,6 +14,9 @@ disabled = true
 
 [git_branch]
 # style = 'bold #C792D5'
+
+[nodejs]
+disabled = true
 
 [python]
 disabled = true
