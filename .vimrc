@@ -17,26 +17,26 @@ set ttimeout ttimeoutlen=30
 set noshowmode
 
 set statusline=
-set statusline+=%#Cursor#%{(mode()=='n')?'\ \ NORMAL\ ':''}
+set statusline+=%#CursorLine#%{(mode()=='n')?'\ \ NORMAL\ ':''}
 set statusline+=%#DiffAdd#%{(mode()=='i')?'\ \ INSERT\ ':''}
 set statusline+=%#DiffDelete#%{(mode()=='r')?'\ \ RPLACE\ ':''}
-set statusline+=%#WildMenu#%{(mode()=='v')?'\ \ VISUAL\ ':''}
-set statusline+=%#Cursor#\ %n\                                 " buffer number
-set statusline+=%#Visual#                                      " colour
+set statusline+=%#HealthSuccess#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+set statusline+=%#CursorLine#\ %n\                                 " buffer number
+set statusline+=%#CursorLine#                                      " colour
 set statusline+=%{&paste?'\ PASTE\ ':''}
 set statusline+=%{&spell?'\ SPELL\ ':''}
-set statusline+=%#DiffChange#                                  " colour
+set statusline+=%#WarningMsg#                                  " colour
 set statusline+=%R                                             " readonly flag
-set statusline+=%M                                             " modified [+] flag
+set statusline+=%M                                             " modified file flag
 set statusline+=%#Cursor#                                      " colour
 set statusline+=%#CursorLine#                                  " colour
 set statusline+=\ %t\                                          " short file name
 set statusline+=%=                                             " right align
 set statusline+=%#CursorLine#                                  " colour
 set statusline+=\ %Y\                                          " file type
-set statusline+=%#Title#                                       " colour
+set statusline+=%#yamlKey#                                       " colour
 set statusline+=\ %3l:%-2c\                                    " line + column
-set statusline+=%#Cursor#                                      " colour
+set statusline+=%#Title#                                      " colour
 set statusline+=\ %3p%%\                                       " percentage
 
 "Backspace through anything in insert mode
