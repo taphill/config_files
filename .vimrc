@@ -78,6 +78,10 @@ set wildmenu
 let g:user_emmet_mode = 'n'
 let g:user_emmet_leader_key = ','
 
+"Add erb tags to surround plugin
+let g:surround_{char2nr('=')} = "<%= \r %>"
+let g:surround_{char2nr('-')} = "<% \r %>"
+
 "Key Commands
 nnoremap <C-t> :tabn<CR>
 nnoremap <S-H> <C-W><C-H>
