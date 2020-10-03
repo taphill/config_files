@@ -5,7 +5,7 @@ if has('termguicolors')
 endif
 
 set background=dark
-colorscheme nord 
+colorscheme gruvbox 
 
 syntax on
 filetype plugin on
