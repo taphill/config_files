@@ -110,7 +110,7 @@ let s:gb.light4_256  = ['#a89984', 246]     " 168-153-132
 let s:gb.bright_red     = ['#fb4934', 167]     " 251-73-52
 let s:gb.bright_green   = ['#b8bb26', 142]     " 184-187-38
 let s:gb.bright_yellow  = ['#ADA289', 214]     " Class names 250-189-47
-let s:gb.bright_blue    = ['#83a598', 109]     " 131-165-152
+let s:gb.bright_blue    = ['#8D99A9', 109]     " 131-165-152
 let s:gb.bright_purple  = ['#d3869b', 175]     " 211-134-155
 let s:gb.bright_aqua    = ['#6B935C', 108]     " Def/end tags 142-192-124
 let s:gb.bright_orange  = ['#fe8019', 208]     " 254-128-25
@@ -519,7 +519,7 @@ call s:HL('StatusLineNC', s:bg1, s:fg4, s:inverse)
 call s:HL('VertSplit', s:bg3, s:vert_split)
 
 " Current match in wildmenu completion
-call s:HL('WildMenu', s:blue, s:bg2, s:bold)
+call s:HL('WildMenu', s:green, s:bg2, s:bold)
 
 " Directory names, special names in listing
 hi! link Directory GruvboxGreenBold
@@ -853,7 +853,8 @@ hi! link DirvishArg GruvboxYellow
 " }}}
 " Netrw: {{{
 
-hi! link netrwDir GruvboxAqua
+hi! link netrwDir GruvboxGreen
+hi! link netrwTreeBar GruvboxFg1
 hi! link netrwClassify GruvboxAqua
 hi! link netrwLink GruvboxGray
 hi! link netrwSymLink GruvboxFg1
@@ -1244,8 +1245,14 @@ hi! link coffeeBracket GruvboxOrange
 " }}}
 " Ruby: {{{
 
-hi! link rubyStringDelimiter GruvboxGreen
-hi! link rubyInterpolationDelimiter GruvboxAqua
+call s:HL('rubyInstanceVariable', s:fg1, s:none, s:bold)
+
+hi! link rubyControl GruvboxRed
+hi! link rubyDefine GruvboxBlue
+hi! link rubyFunction GruvboxAqua
+hi! link rubyString GruvboxGreen
+hi! link rubyStringDelimiter GruvboxGray
+hi! link rubyInterpolationDelimiter GruvboxOrange
 
 " }}}
 " ObjectiveC: {{{

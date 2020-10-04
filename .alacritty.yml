@@ -7,16 +7,15 @@ window:
     
 font:
   normal:
-    family: Fira Mono for Powerline
-    style: Regular
+    family: Roboto Mono Light for Powerline
   bold:
-    family: Fira Mono for Powerline
+    family: Roboto Mono for Powerline
     style: Bold
   italic:
-    family: Fira Mono for Powerline
+    family: Roboto Mono Light for Powerline
     style: Italic
   bold_italic:
-    family: Fira Mono for Powerline
+    family: Roboto Mono Light for Powerline
     style: Bold Italic
   use_thin_strokes: false
   size: 18.0

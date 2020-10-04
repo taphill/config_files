@@ -10,13 +10,13 @@ disabled = true
 disabled = true
 
 [directory]
-style = 'bold blue'
+style = 'blue'
 
 [git_branch]
-style = 'bold purple'
+style = 'purple'
 
 [git_status]
-style = 'bold #fe8019'
+style = '#fe8019'
 
 [nodejs]
 disabled = true
