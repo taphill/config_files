@@ -19,6 +19,7 @@ Public
 .cargo
 .gem
 .local
+.netrc
 .npm
 .psql_history
 .rbenv
