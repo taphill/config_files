@@ -1,6 +1,6 @@
 # Replace the "❯" symbol in the prompt with "➜"
 [character]
-success_symbol = "[➜](cyan) "
+success_symbol = "[➜](green) "
 vicmd_symbol = "[V](green) "
 
 [line_break]
@@ -10,13 +10,13 @@ disabled = true
 disabled = true
 
 [directory]
-style = 'blue'
+style = 'bold cyan'
 
 [git_branch]
-style = 'purple'
+style = 'bold purple'
 
 [git_status]
-style = '#fe8019'
+style = 'bold red'
 
 [nodejs]
 disabled = true

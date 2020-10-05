@@ -1245,11 +1245,11 @@ hi! link coffeeBracket GruvboxOrange
 " }}}
 " Ruby: {{{
 
-call s:HL('rubyInstanceVariable', s:fg1, s:none, s:bold)
-
 hi! link rubyControl GruvboxRed
-hi! link rubyDefine GruvboxBlue
-hi! link rubyFunction GruvboxAqua
+hi! link rubyDefine GruvboxAqua
+hi! link rubyFunction GruvboxAquaBold
+hi! link rubyHelper GruvboxFg1
+hi! link rubyInstanceVariable GruvboxFg1
 hi! link rubyString GruvboxGreen
 hi! link rubyStringDelimiter GruvboxGray
 hi! link rubyInterpolationDelimiter GruvboxOrange

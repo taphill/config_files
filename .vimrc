@@ -4,11 +4,37 @@ if has('termguicolors')
   set termguicolors
 endif
 
+" Uncomment this to check highlight groups
+" Place cursor over work ang hit shift-c
+
+" nnoremap <S-c> :call <SID>SynStack()<CR>
+" function! <SID>SynStack()
+"   if !exists("*synstack")
+"     return
+"   endif
+"   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+" endfunc
+
 set background=dark
 colorscheme gruvbox 
 
 syntax on
 filetype plugin on
+
+"Backspace through anything in insert mode
+set backspace=indent,eol,start
+
+set colorcolumn=100
+
+set belloff=all
+set tabstop=2 softtabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
+set nowrap
+set noswapfile
+
+set number                    
 
 "Statusline stuff
 "run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
@@ -38,21 +64,6 @@ set statusline+=%#Title#                                       " colour
 set statusline+=\ %3l:%-2c\                                    " line + column
 set statusline+=%#yamlKey#                                      " colour
 set statusline+=\ %3p%%\                                       " percentage
-
-"Backspace through anything in insert mode
-set backspace=indent,eol,start
-
-set colorcolumn=100
-
-set belloff=all
-set tabstop=2 softtabstop=2
-set shiftwidth=2
-set expandtab
-set smartindent
-set nowrap
-set noswapfile
-
-set number                    
 
 "Netrw
 let g:netrw_banner = 0
@@ -88,6 +99,7 @@ nnoremap <S-H> <C-W><C-H>
 nnoremap <S-L> <C-W><C-L>
 
 "Vim Commands
+nnoremap ,ws :write <bar> suspend<CR>
 nnoremap ,trim :%s/\s\+$//<CR>
 nnoremap ,s :set hlsearch<CR>
 nnoremap ,so :set nohlsearch<CR>

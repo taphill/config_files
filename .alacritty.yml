@@ -1,4 +1,4 @@
-background_opacity: 0.8
+#background_opacity: 0.8
 
 window:
   dimensions:
@@ -20,41 +20,44 @@ font:
   use_thin_strokes: false
   size: 18.0
 
+
+draw_bold_text_with_bright_colors: true
+
 # Colors (Jellybeans)
 colors:
-  # Default colors
-  primary:
-    background: '#22282D'
-    foreground: '#BBBBBB'
+   # Default colors
+   primary:
+     background: '#22282D'
+     foreground: '#BBBBBB'
 
-  # Cursor volors
-  cursor:
-    text: '#000000'
-    cursor: '#ffb472'
+   # Cursor volors
+   cursor:
+     text: '#000000'
+     cursor: '#ffb472'
 
-  # Normal colors
-  normal:
-    black:   '#a3a3a3'
-    red:     '#cc241d'
-    green:   '#98971a'
-    yellow:  '#d79921'
-    blue:    '#458588'
-    magenta: '#b16286'
-    cyan:    '#689d6a'
-    white:   '#e4e4e4'
+   # Normal colors
+   normal:
+     black:   '#a3a3a3'
+     red:     '#cc241d'
+     green:   '#98971a'
+     yellow:  '#d79921'
+     blue:    '#458588'
+     magenta: '#b16286'
+     cyan:    '#689d6a'
+     white:   '#e4e4e4'
 
-  # Bright colors
-  bright:
-    black:   '#c8c8c8'
-    red:     '#fb4934'
-    green:   '#b8bb26' 
-    yellow:  '#ADA289'
-    blue:    '#83a598'
-    magenta: '#d3869b'
-    cyan:    '#6B935C' 
-    white:   '#feffff'
-
-  # Selection colors
-  selection:
-    text: '#5963a2'
-    background: '#f6f6f6'
+   # Bright colors
+   bright:
+     black:   '#c8c8c8'
+     red:     '#fb4934'
+     green:   '#b8bb26'
+     yellow:  '#ADA289'
+     blue:    '#83a598'
+     magenta: '#d3869b'
+     cyan:    '#6B935C'
+     white:   '#feffff'
+     
+   # Selection colors
+   selection:
+     text: '#5963a2'
+     background: '#f6f6f6'
