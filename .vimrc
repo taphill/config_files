@@ -51,7 +51,7 @@ set statusline+=%#CursorLine#\ %n\                                 " buffer numb
 set statusline+=%#CursorLine#                                      " colour
 set statusline+=%{&paste?'\ PASTE\ ':''}
 set statusline+=%{&spell?'\ SPELL\ ':''}
-set statusline+=%#ErrorMsg#                                  " colour
+set statusline+=%#ErrorMsg#                                    " colour
 set statusline+=%R                                             " readonly flag
 set statusline+=%M                                             " modified file flag
 set statusline+=%#Cursor#                                      " colour
@@ -62,7 +62,7 @@ set statusline+=%#CursorLine#                                  " colour
 set statusline+=\ %Y\                                          " file type
 set statusline+=%#Title#                                       " colour
 set statusline+=\ %3l:%-2c\                                    " line + column
-set statusline+=%#yamlKey#                                      " colour
+set statusline+=%#yamlKey#                                     " colour
 set statusline+=\ %3p%%\                                       " percentage
 
 "Netrw
@@ -90,8 +90,8 @@ let g:user_emmet_mode = 'n'
 let g:user_emmet_leader_key = ','
 
 "Add erb tags to surround plugin
-let g:surround_{char2nr('=')} = "<%= \r %>"
-let g:surround_{char2nr('-')} = "<% \r %>"
+let g:surround_{char2nr('=')} = "<%= \r %>"    " ctrl + s + =
+let g:surround_{char2nr('-')} = "<% \r %>"     " ctrl + s + -
 
 "Key Commands
 nnoremap <C-t> :tabn<CR>
