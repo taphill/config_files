@@ -1249,9 +1249,10 @@ hi! link rubyControl GruvboxRed
 hi! link rubyDefine GruvboxAqua
 hi! link rubyFunction GruvboxAquaBold
 hi! link rubyHelper GruvboxFg1
-hi! link rubyInstanceVariable GruvboxFg1
+hi! link rubyInstanceVariable GruvboxPurple
 hi! link rubyString GruvboxGreen
 hi! link rubyStringDelimiter GruvboxGray
+hi! link rubySymbol GruvboxBlue
 hi! link rubyInterpolationDelimiter GruvboxOrange
 
 " }}}
