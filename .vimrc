@@ -56,7 +56,7 @@ set statusline+=%R                                             " readonly flag
 set statusline+=%M                                             " modified file flag
 set statusline+=%#Cursor#                                      " colour
 set statusline+=%#CursorLine#                                  " colour
-set statusline+=\ %t\                                          " short file name
+set statusline+=%{expand('%:p:h:t')}/%t                        " short file name
 set statusline+=%=                                             " right align
 set statusline+=%#CursorLine#                                  " colour
 set statusline+=\ %Y\                                          " file type
