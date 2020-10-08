@@ -86,9 +86,9 @@ let s:is_dark=(&background == 'dark')
 let s:gb = {}
 
 " fill it with absolute colors
-let s:gb.dark0_hard  = ['#22282D', 234]     " Background 29-32-33
-let s:gb.dark0       = ['#22282D', 235]     " Background 40-40-40
-let s:gb.dark0_soft  = ['#22282D', 236]     " Background 50-48-47
+let s:gb.dark0_hard  = ['#292C3E', 234]     " Background 29-32-33
+let s:gb.dark0       = ['#292C3E', 235]     " Background 40-40-40
+let s:gb.dark0_soft  = ['#292C3E', 236]     " Background 50-48-47
 let s:gb.dark1       = ['#3B4252', 237]     " Statusline 60-56-54
 let s:gb.dark2       = ['#22282D', 239]     " File Search bar 80-73-69
 let s:gb.dark3       = ['#665c54', 241]     " 102-92-84
@@ -101,18 +101,18 @@ let s:gb.gray_244    = ['#6E788C', 244]     " 146-131-116
 let s:gb.light0_hard = ['#f9f5d7', 230]     " 249-245-215
 let s:gb.light0      = ['#fbf1c7', 229]     " 253-244-193
 let s:gb.light0_soft = ['#f2e5bc', 228]     " 242-229-188
-let s:gb.light1      = ['#BBBBBB', 223]     " Text 235-219-178
+let s:gb.light1      = ['#EBEBEB', 223]     " Text 235-219-178
 let s:gb.light2      = ['#d5c4a1', 250]     " 213-196-161
 let s:gb.light3      = ['#bdae93', 248]     " 189-174-147
 let s:gb.light4      = ['#a89984', 246]     " 168-153-132
 let s:gb.light4_256  = ['#a89984', 246]     " 168-153-132
 
-let s:gb.bright_red     = ['#C65959', 167]     " 251-73-52
-let s:gb.bright_green   = ['#b8bb26', 142]     " 184-187-38
-let s:gb.bright_yellow  = ['#ADA289', 214]     " Class names 250-189-47
+let s:gb.bright_red     = ['#E75454', 167]     " 251-73-52
+let s:gb.bright_green   = ['#A0E521', 142]     " 184-187-38
+let s:gb.bright_yellow  = ['#FFD750', 214]     " Class names 250-189-47
 let s:gb.bright_blue    = ['#8D99A9', 109]     " 131-165-152
-let s:gb.bright_purple  = ['#d3869b', 175]     " 211-134-155
-let s:gb.bright_aqua    = ['#6B935C', 108]     " Def/end tags 142-192-124
+let s:gb.bright_purple  = ['#AB9DF2', 175]     " 211-134-155
+let s:gb.bright_aqua    = ['#78DCE8', 108]     " Def/end tags 142-192-124
 let s:gb.bright_orange  = ['#fe8019', 208]     " 254-128-25
 
 let s:gb.neutral_red    = ['#cc241d', 124]     " 204-36-29
@@ -1245,15 +1245,19 @@ hi! link coffeeBracket GruvboxOrange
 " }}}
 " Ruby: {{{
 
+hi! link rubyAssertion GruvboxBlue
+hi! link rubyConstant GruvboxAqua
 hi! link rubyControl GruvboxRed
-hi! link rubyDefine GruvboxAqua
-hi! link rubyFunction GruvboxAquaBold
+hi! link rubyDefine GruvboxRed
+hi! link rubyFunction GruvboxGreen
 hi! link rubyHelper GruvboxFg1
+hi! link rubyInclude GruvboxRed
+hi! link rubyInterpolationDelimiter GruvboxOrange
 hi! link rubyInstanceVariable GruvboxPurple
-hi! link rubyString GruvboxGreen
+hi! link rubyString GruvboxYellow
 hi! link rubyStringDelimiter GruvboxGray
 hi! link rubySymbol GruvboxBlue
-hi! link rubyInterpolationDelimiter GruvboxOrange
+hi! link rubyTestMacro GruvboxRed
 
 " }}}
 " ObjectiveC: {{{
