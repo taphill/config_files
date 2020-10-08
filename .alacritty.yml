@@ -13,7 +13,7 @@ font:
     style: Bold
   italic:
     family: Roboto Mono Light for Powerline
-    style: Italic
+    style: Light Italic
   bold_italic:
     family: Roboto Mono Light for Powerline
     style: Bold Italic

@@ -7,16 +7,17 @@ endif
 " Uncomment this to check highlight groups
 " Place cursor over work ang hit shift-c
 
-" nnoremap <S-c> :call <SID>SynStack()<CR>
-" function! <SID>SynStack()
-"   if !exists("*synstack")
-"     return
-"   endif
-"   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-" endfunc
+nnoremap <S-c> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
 
 set background=dark
 colorscheme gruvbox 
+
 
 syntax on
 filetype plugin on
@@ -56,7 +57,7 @@ set statusline+=%R                                             " readonly flag
 set statusline+=%M                                             " modified file flag
 set statusline+=%#Cursor#                                      " colour
 set statusline+=%#CursorLine#                                  " colour
-set statusline+=%{expand('%:p:h:t')}/%t                        " short file name
+set statusline+=%f
 set statusline+=%=                                             " right align
 set statusline+=%#CursorLine#                                  " colour
 set statusline+=\ %Y\                                          " file type

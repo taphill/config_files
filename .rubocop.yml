@@ -45,6 +45,9 @@ Style/BisectedAttrAccessor:
   Enabled: true
 Style/CaseLikeIf:
   Enabled: true
+Style/EmptyMethod:
+  Enabled: true
+  EnforcedStyle: expanded
 Style/ExplicitBlockArgument:
   Enabled: true
 Style/ExponentialNotation:
@@ -109,6 +112,9 @@ Minitest/UnspecifiedException:
 
 Rails/ActiveRecordCallbacksOrder:
   Enabled: true
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/**/*.rb
 Rails/FindById:
   Enabled: true
 Rails/Inquiry:
