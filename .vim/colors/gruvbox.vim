@@ -1244,8 +1244,10 @@ hi! link coffeeBracket GruvboxOrange
 " }}}
 " Ruby: {{{
 
+hi! link rubyAssertion GruvboxBlue
 hi! link rubyHelper GruvboxFg1
 hi! link rubyStringDelimiter GruvboxGreen
+hi! link rubyTestAction GruvboxBlue
 hi! link rubyInterpolationDelimiter GruvboxAqua
 
 " }}}
