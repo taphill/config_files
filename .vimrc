@@ -7,13 +7,13 @@ endif
 " Uncomment this to check highlight groups
 " Place cursor over work ang hit shift-c
 
-nnoremap <S-c> :call <SID>SynStack()<CR>
-function! <SID>SynStack()
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
+" nnoremap <S-c> :call <SID>SynStack()<CR>
+" function! <SID>SynStack()
+"   if !exists("*synstack")
+"     return
+"   endif
+"   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+" endfunc
 
 set background=dark
 colorscheme gruvbox 
@@ -104,6 +104,8 @@ nnoremap ,ws :write <bar> suspend<CR>
 nnoremap ,trim :%s/\s\+$//<CR>
 nnoremap ,s :set hlsearch<CR>
 nnoremap ,so :set nohlsearch<CR>
+nnoremap ,f :find<space>
+nnoremap ,vsf :vert sf<space>
 
 vnoremap ,c :%y+<CR>
 vnoremap ,r "hy:%s/<C-r>h//g<left><left>
