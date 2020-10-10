@@ -1,9 +1,7 @@
-#background_opacity: 0.8
-
 window:
   dimensions:
-   columns: 85
-   lines: 50
+   columns: 160 
+   lines: 40
     
 font:
   normal:
