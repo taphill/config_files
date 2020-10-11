@@ -1,3 +1,4 @@
+runtime macros/matchit.vim
 set nocompatible
 
 if has('termguicolors')
@@ -67,9 +68,9 @@ set statusline+=%#yamlKey#                                     " colour
 set statusline+=\ %3p%%\                                       " percentage
 
 "Netrw
-let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 20
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'                " Hide dot files
 
 "Always show at least one line above/below the cursor
 if !&scrolloff
@@ -102,13 +103,29 @@ nnoremap <S-L> <C-W><C-L>
 "Vim Commands
 nnoremap ,ws :write <bar> suspend<CR>
 nnoremap ,trim :%s/\s\+$//<CR>
-nnoremap ,s :set hlsearch<CR>
-nnoremap ,so :set nohlsearch<CR>
-nnoremap ,f :find<space>
-nnoremap ,vsf :vert sf<space>
+nnoremap ,f :find
+" nnoremap ,vsf :vert sf<space>
 
 vnoremap ,c :%y+<CR>
 vnoremap ,r "hy:%s/<C-r>h//g<left><left>
+
+"Vim-Rails mappings
+nnoremap ,em :Emodel<space>
+nnoremap ,ev :Eview<space>
+nnoremap ,ec :Econtroller<space>
+nnoremap ,es :Espec<space>
+nnoremap ,em :Emodel<space>
+
+nnoremap ,vv :Vview<space>
+nnoremap ,vc :Vcontroller<space>
+nnoremap ,vs :Vspec<space>
+nnoremap ,vm :Vmodel<space>
+
+nnoremap ,sv :Sview<space>
+nnoremap ,sc :Scontroller<space>
+nnoremap ,ss :Sspec<space>
+nnoremap ,sm :Smodel<space>
+
 
 "Code Snippets
 nnoremap ,b :-1read $HOME/.vim/.ruby_snippets/.pry.rb<CR>
@@ -126,8 +143,6 @@ nnoremap ,ae :-1read $HOME/.vim/.ruby_snippets/.assert_eq.rb<CR>jddkea<space>
 nnoremap ,an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
 
 nnoremap ,rake :-1read $HOME/.vim/.ruby_snippets/.rakefile.rb<CR> 
-
-nnoremap ,html :-1read $HOME/.vim/.html_snippets/.doctype.html<CR>
 
 " Get persisted bit from pry session
 " nnoremap <leader>p :.! cat /tmp/pry-output.json \| jq .<CR>
