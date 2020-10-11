@@ -3,6 +3,9 @@ require:
   - rubocop-minitest
   - rubocop-rspec
 
+AllCops:
+  NewCops: enable
+
 Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true
 Layout/SpaceAroundMethodCallOperator:
