@@ -99,6 +99,8 @@ let g:surround_{char2nr('-')} = "<% \r %>"     " ctrl + s + -
 nnoremap <C-t> :tabn<CR>
 nnoremap <S-H> <C-W><C-H>
 nnoremap <S-L> <C-W><C-L>
+nnoremap <S-J> <C-W><C-J>
+nnoremap <S-K> <C-W><C-K>
 
 "Vim Commands
 nnoremap ,ws :write <bar> suspend<CR>
