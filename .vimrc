@@ -6,7 +6,7 @@ if has('termguicolors')
 endif
 
 " Uncomment this to check highlight groups
-" Place cursor over work ang hit shift-c
+" Place cursor over word ang hit shift-c
 
 " nnoremap <S-c> :call <SID>SynStack()<CR>
 " function! <SID>SynStack()
@@ -19,7 +19,6 @@ endif
 set background=dark
 colorscheme gruvbox 
 
-
 syntax on
 filetype plugin on
 
@@ -27,7 +26,6 @@ filetype plugin on
 set backspace=indent,eol,start
 
 set colorcolumn=100
-
 set belloff=all
 set tabstop=2 softtabstop=2
 set shiftwidth=2
@@ -35,22 +33,20 @@ set expandtab
 set smartindent
 set nowrap
 set noswapfile
-
-set number                    
+set relativenumber                    
 
 "Statusline stuff
 "run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
 set laststatus=2
 set ttimeout ttimeoutlen=30
 set noshowmode
-
 set statusline=
 set statusline+=%#CursorLine#%{(mode()=='n')?'\ \ NORMAL\ ':''}
 set statusline+=%#DiffAdd#%{(mode()=='i')?'\ \ INSERT\ ':''}
 set statusline+=%#DiffDelete#%{(mode()=='r')?'\ \ RPLACE\ ':''}
 set statusline+=%#GruvboxOrangeSign#%{(mode()=='v')?'\ \ VISUAL\ ':''}
-set statusline+=%#CursorLine#\ %n\                                 " buffer number
-set statusline+=%#CursorLine#                                      " colour
+set statusline+=%#CursorLine#\ %n\                             " buffer number
+set statusline+=%#CursorLine#                                  " colour
 set statusline+=%{&paste?'\ PASTE\ ':''}
 set statusline+=%{&spell?'\ SPELL\ ':''}
 set statusline+=%#ErrorMsg#                                    " colour
@@ -105,7 +101,6 @@ nnoremap <S-K> <C-W><C-K>
 "Vim Commands
 nnoremap ,ws :write <bar> suspend<CR>
 nnoremap ,trim :%s/\s\+$//<CR>
-
 vnoremap ,r "hy:%s/<C-r>h//g<left><left>
 
 "Vim-Rails mappings
@@ -125,7 +120,6 @@ nnoremap ,sc :Scontroller<space>
 nnoremap ,ss :Sspec<space>
 nnoremap ,sm :Smodel<space>
 
-
 "Code Snippets
 nnoremap ,b :-1read $HOME/.vim/.ruby_snippets/.pry.rb<CR>
 
@@ -142,6 +136,3 @@ nnoremap ,ae :-1read $HOME/.vim/.ruby_snippets/.assert_eq.rb<CR>jddkea<space>
 nnoremap ,an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
 
 nnoremap ,rake :-1read $HOME/.vim/.ruby_snippets/.rakefile.rb<CR> 
-
-" Get persisted bit from pry session
-" nnoremap <leader>p :.! cat /tmp/pry-output.json \| jq .<CR>
