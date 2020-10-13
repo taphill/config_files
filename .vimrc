@@ -105,10 +105,7 @@ nnoremap <S-K> <C-W><C-K>
 "Vim Commands
 nnoremap ,ws :write <bar> suspend<CR>
 nnoremap ,trim :%s/\s\+$//<CR>
-nnoremap ,f :find
-" nnoremap ,vsf :vert sf<space>
 
-vnoremap ,c :%y+<CR>
 vnoremap ,r "hy:%s/<C-r>h//g<left><left>
 
 "Vim-Rails mappings
