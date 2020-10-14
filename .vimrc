@@ -64,6 +64,7 @@ set statusline+=%#yamlKey#                                     " colour
 set statusline+=\ %3p%%\                                       " percentage
 
 "Netrw
+let g:netrw_altv = 1
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 20
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'                " Hide dot files
@@ -92,11 +93,12 @@ let g:surround_{char2nr('=')} = "<%= \r %>"    " ctrl + s + =
 let g:surround_{char2nr('-')} = "<% \r %>"     " ctrl + s + -
 
 "Key Commands
-nnoremap <C-t> :tabn<CR>
-nnoremap <S-H> <C-W><C-H>
-nnoremap <S-L> <C-W><C-L>
-nnoremap <S-J> <C-W><C-J>
-nnoremap <S-K> <C-W><C-K>
+nnoremap <space>t :tabn<CR>
+nnoremap <space>r :tabp<CR>
+nnoremap <space>h <C-W><C-H>
+nnoremap <space>l <C-W><C-L>
+nnoremap <space>j <C-W><C-J>
+nnoremap <space>k <C-W><C-K>
 
 "Vim Commands
 nnoremap ,ws :write <bar> suspend<CR>
@@ -123,16 +125,16 @@ nnoremap ,sm :Smodel<space>
 "Code Snippets
 nnoremap ,b :-1read $HOME/.vim/.ruby_snippets/.pry.rb<CR>
 
-nnoremap ,init :-1read $HOME/.vim/.ruby_snippets/.def_initialize.rb<CR>jjjddkkk$i
-nnoremap ,min :-1read $HOME/.vim/.ruby_snippets/.minitest.rb<CR>jjj 
+nnoremap <leader>init :-1read $HOME/.vim/.ruby_snippets/.def_initialize.rb<CR>jjjddkkk$i
+nnoremap <leader>min :-1read $HOME/.vim/.ruby_snippets/.minitest.rb<CR>jjj 
 
-nnoremap ,atr :-1read $HOME/.vim/.ruby_snippets/.attr_reader.rb<CR>ea<space>
-nnoremap ,atw :-1read $HOME/.vim/.ruby_snippets/.attr_writer.rb<CR>ea<space>
-nnoremap ,ata :-1read $HOME/.vim/.ruby_snippets/.attr_access.rb<CR>ea<space>
+nnoremap <leader>atr :-1read $HOME/.vim/.ruby_snippets/.attr_reader.rb<CR>ea<space>
+nnoremap <leader>atw :-1read $HOME/.vim/.ruby_snippets/.attr_writer.rb<CR>ea<space>
+nnoremap <leader>ata :-1read $HOME/.vim/.ruby_snippets/.attr_access.rb<CR>ea<space>
 
-nnoremap ,ain :-1read $HOME/.vim/.ruby_snippets/.assert_ins.rb<CR>jddkea<space>
-nnoremap ,aic :-1read $HOME/.vim/.ruby_snippets/.assert_inc.rb<CR>jddkea<space>
-nnoremap ,ae :-1read $HOME/.vim/.ruby_snippets/.assert_eq.rb<CR>jddkea<space>
-nnoremap ,an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
+nnoremap <leader>ain :-1read $HOME/.vim/.ruby_snippets/.assert_ins.rb<CR>jddkea<space>
+nnoremap <leader>aic :-1read $HOME/.vim/.ruby_snippets/.assert_inc.rb<CR>jddkea<space>
+nnoremap <leader>ae :-1read $HOME/.vim/.ruby_snippets/.assert_eq.rb<CR>jddkea<space>
+nnoremap <leader>an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
 
-nnoremap ,rake :-1read $HOME/.vim/.ruby_snippets/.rakefile.rb<CR> 
+nnoremap <leader>rake :-1read $HOME/.vim/.ruby_snippets/.rakefile.rb<CR> 
