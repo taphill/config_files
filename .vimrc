@@ -6,7 +6,7 @@ if has('termguicolors')
 endif
 
 " Uncomment this to check highlight groups
-" Place cursor over word ang hit shift-c
+" Place cursor over word and hit shift-c
 
 " nnoremap <S-c> :call <SID>SynStack()<CR>
 " function! <SID>SynStack()
@@ -65,8 +65,6 @@ set statusline+=%#yamlKey#                                     " colour
 set statusline+=\ %3p%%\                                       " percentage
 
 "Netrw
-let g:netrw_altv = 1
-let g:netrw_liststyle = 3
 let g:netrw_winsize = 20
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'                " Hide dot files
 
@@ -94,6 +92,7 @@ let g:surround_{char2nr('=')} = "<%= \r %>"    " ctrl + s + =
 let g:surround_{char2nr('-')} = "<% \r %>"     " ctrl + s + -
 
 "Key Commands
+nnoremap <space>e :Explore<CR>
 nnoremap <space>t :tabn<CR>
 nnoremap <space>r :tabp<CR>
 nnoremap <space>h <C-W><C-H>
