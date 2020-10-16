@@ -33,6 +33,7 @@ set expandtab
 set smartindent
 set nowrap
 set noswapfile
+set number
 set relativenumber                    
 
 "Statusline stuff
