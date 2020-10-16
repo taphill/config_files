@@ -124,17 +124,3 @@ nnoremap ,sm :Smodel<space>
 
 "Code Snippets
 nnoremap ,b :-1read $HOME/.vim/.ruby_snippets/.pry.rb<CR>
-
-nnoremap <leader>init :-1read $HOME/.vim/.ruby_snippets/.def_initialize.rb<CR>jjjddkkk$i
-nnoremap <leader>min :-1read $HOME/.vim/.ruby_snippets/.minitest.rb<CR>jjj 
-
-nnoremap <leader>atr :-1read $HOME/.vim/.ruby_snippets/.attr_reader.rb<CR>ea<space>
-nnoremap <leader>atw :-1read $HOME/.vim/.ruby_snippets/.attr_writer.rb<CR>ea<space>
-nnoremap <leader>ata :-1read $HOME/.vim/.ruby_snippets/.attr_access.rb<CR>ea<space>
-
-nnoremap <leader>ain :-1read $HOME/.vim/.ruby_snippets/.assert_ins.rb<CR>jddkea<space>
-nnoremap <leader>aic :-1read $HOME/.vim/.ruby_snippets/.assert_inc.rb<CR>jddkea<space>
-nnoremap <leader>ae :-1read $HOME/.vim/.ruby_snippets/.assert_eq.rb<CR>jddkea<space>
-nnoremap <leader>an :-1read $HOME/.vim/.ruby_snippets/.assert_nil.rb<CR>jddkea<space>
-
-nnoremap <leader>rake :-1read $HOME/.vim/.ruby_snippets/.rakefile.rb<CR> 
