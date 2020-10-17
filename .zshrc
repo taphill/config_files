@@ -2,7 +2,8 @@ eval "$(rbenv init -)"
 
 alias vim=/usr/local/bin/vim
 
-alias ber="bundle exec rspec"
+alias be="bundle exec"
+alias cber="clear ; bundle exec rspec"
 
 export EDITOR=vim
 
