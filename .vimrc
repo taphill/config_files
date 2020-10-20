@@ -41,17 +41,20 @@ set ttimeout ttimeoutlen=30
 set laststatus=2
 set statusline=
 set statusline+=%#CursorLine#
+set statusline+=\ ‹‹
 set statusline+=\ %f
-set statusline+=\ \ %*
+set statusline+=\ ››\ %*
+set statusline+=%#CursorLine#
+set statusline+=\ %*
 set statusline+=%#StatusLineTerm#
-set statusline+=%(\ \ %m\ \ %)
+set statusline+=%(\ \ %M%R\ \ %)
 set statusline+=%#CursorLine#
 set statusline+=%=
 set statusline+=\ \ %*
-set statusline+=\ ‹‹
 set statusline+=\ ::
 set statusline+=\ %{FugitiveStatusline()}
-set statusline+=\ ››\ %*
+set statusline+=\ ::
+set statusline+=\ %*
 
 "Netrw
 let g:netrw_winsize = 20
