@@ -36,33 +36,22 @@ set noswapfile
 set number
 set relativenumber                    
 
-"Statusline stuff
 "run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
-set laststatus=2
 set ttimeout ttimeoutlen=30
-set noshowmode
+set laststatus=2
 set statusline=
-set statusline+=%#CursorLine#%{(mode()=='n')?'\ \ NORMAL\ ':''}
-set statusline+=%#DiffAdd#%{(mode()=='i')?'\ \ INSERT\ ':''}
-set statusline+=%#DiffDelete#%{(mode()=='r')?'\ \ RPLACE\ ':''}
-set statusline+=%#GruvboxOrangeSign#%{(mode()=='v')?'\ \ VISUAL\ ':''}
-set statusline+=%#CursorLine#\ %n\                             " buffer number
-set statusline+=%#CursorLine#                                  " colour
-set statusline+=%{&paste?'\ PASTE\ ':''}
-set statusline+=%{&spell?'\ SPELL\ ':''}
-set statusline+=%#ErrorMsg#                                    " colour
-set statusline+=%R                                             " readonly flag
-set statusline+=%M                                             " modified file flag
-set statusline+=%#Cursor#                                      " colour
-set statusline+=%#CursorLine#                                  " colour
-set statusline+=%f
-set statusline+=%=                                             " right align
-set statusline+=%#CursorLine#                                  " colour
-set statusline+=\ %Y\                                          " file type
-set statusline+=%#Title#                                       " colour
-set statusline+=\ %3l:%-2c\                                    " line + column
-set statusline+=%#yamlKey#                                     " colour
-set statusline+=\ %3p%%\                                       " percentage
+set statusline+=%#CursorLine#
+set statusline+=\ %f
+set statusline+=\ \ %*
+set statusline+=%#StatusLineTerm#
+set statusline+=%(\ \ %m\ \ %)
+set statusline+=%#CursorLine#
+set statusline+=%=
+set statusline+=\ \ %*
+set statusline+=\ ‹‹
+set statusline+=\ ::
+set statusline+=\ %{FugitiveStatusline()}
+set statusline+=\ ››\ %*
 
 "Netrw
 let g:netrw_winsize = 20
