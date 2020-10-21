@@ -36,3 +36,6 @@ Public
 .viminfo
 .zprofile
 .zsh_history
+.zcompcache/
+.zcompdump
+
