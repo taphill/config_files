@@ -5,3 +5,7 @@
 	s = status
   a = add
   c = commit -m
+  b = branch
+
+  co = checkout
+  cob = checkout -b
