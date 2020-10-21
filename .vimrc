@@ -98,6 +98,10 @@ nnoremap ,trim :%s/\s\+$//<CR>
 vnoremap ,c :%y+<CR>
 vnoremap ,r "hy:%s/<C-r>h//g<left><left>
 
+"Vim-Fugitive mappings
+nnoremap <space>g :Git<space>
+nnoremap ,gs :Git<CR>
+
 "Vim-Rails mappings
 nnoremap ,em :Emodel<space>
 nnoremap ,ev :Eview<space>
