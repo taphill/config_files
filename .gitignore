@@ -28,6 +28,7 @@ Public
 .vscode
 .Trash
 .vim/.netrwhist
+.config/nvim/.netrwhist
 
 .CFUserTextEncoding
 .hushlogin
