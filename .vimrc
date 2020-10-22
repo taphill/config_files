@@ -35,6 +35,7 @@ set nowrap
 set noswapfile
 set number
 set relativenumber                    
+set hlsearch
 
 "run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
 set ttimeout ttimeoutlen=30
@@ -96,7 +97,7 @@ nnoremap <space>k <C-W><C-K>
 nnoremap ,ws :write <bar> suspend<CR>
 nnoremap ,trim :%s/\s\+$//<CR>
 vnoremap ,c :%y+<CR>
-vnoremap ,r "hy:%s/<C-r>h//g<left><left>
+vnoremap ,ra "hy:%s/<C-r>h//g<left><left>
 
 "Vim-Fugitive mappings
 nnoremap <space>g :Git<space>
