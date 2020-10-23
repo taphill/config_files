@@ -36,6 +36,8 @@ set noswapfile
 set number
 set relativenumber                    
 set hlsearch
+set cursorline
+set cursorlineopt=number
 
 "run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
 set ttimeout ttimeoutlen=30
