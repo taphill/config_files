@@ -54,6 +54,21 @@ set statusline+=\ %{FugitiveStatusline()}
 set statusline+=\ ::
 set statusline+=\ %*
 
+" Ale settings
+let g:ale_sign_error = '❱❱'
+" let g:ale_sign_warning = '.'
+let g:ale_sign_column_always = 1
+let g:ale_linters_explicit = 1
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'ruby': ['rubocop'],
+\}
+
+let g:ale_fixers = {
+\   'ruby': ['rubocop']
+\}
+
 "Netrw
 let g:netrw_winsize = 20
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'                " Hide dot files
