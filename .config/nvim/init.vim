@@ -57,8 +57,7 @@ set statusline+=\ %*
 
 " Ale settings
 let g:ale_sign_error = '❱❱'
-" let g:ale_sign_warning = '.'
-let g:ale_enabled = 0
+" let g:ale_enabled = 0
 let g:ale_sign_column_always = 1
 let g:ale_linters_explicit = 1
 
@@ -107,6 +106,7 @@ nnoremap <space>k <C-W><C-K>
 "Vim Commands
 nnoremap ,ws :write <bar> suspend<CR>
 nnoremap ,trim :%s/\s\+$//<CR>
+nnoremap ,ale :ALEToggle<CR>
 vnoremap ,c :%y+<CR>
 vnoremap ,ra "hy:%s/<C-r>h//g<left><left>
 
