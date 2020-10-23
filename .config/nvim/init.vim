@@ -1,5 +1,5 @@
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath = &runtimepath
+" set runtimepath^=~/.vim runtimepath+=~/.vim/after
+" let &packpath = &runtimepath
 
 " Temp fix for netrw slow loading. Might not need once version 0.5 is released
 let g:loaded_clipboard_provider = 1
@@ -33,6 +33,7 @@ set nowrap
 set noswapfile
 set number
 set relativenumber                    
+set mouse+=a
 
 "run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
 " set ttimeout ttimeoutlen=30
@@ -57,6 +58,7 @@ set statusline+=\ %*
 " Ale settings
 let g:ale_sign_error = '❱❱'
 " let g:ale_sign_warning = '.'
+let g:ale_enabled = 0
 let g:ale_sign_column_always = 1
 let g:ale_linters_explicit = 1
 

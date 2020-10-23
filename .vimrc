@@ -38,6 +38,8 @@ set relativenumber
 set hlsearch
 set cursorline
 set cursorlineopt=number
+set mouse+=a
+" let &t_SI.="\e[5 q" "SI = INSERT mode
 
 "run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
 set ttimeout ttimeoutlen=30
