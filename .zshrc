@@ -6,7 +6,7 @@ alias be="bundle exec"
 alias cber="clear ; bundle exec rspec"
 alias rcop="clear ; bundle exec rubocop"
 
-export EDITOR=nvim
+export EDITOR=vim
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
