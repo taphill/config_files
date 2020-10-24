@@ -4,6 +4,7 @@ alias vim=/usr/local/bin/vim
 
 alias be="bundle exec"
 alias cber="clear ; bundle exec rspec"
+alias rcop="clear ; bundle exec rubocop"
 
 export EDITOR=nvim
 

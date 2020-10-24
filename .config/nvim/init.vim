@@ -1,6 +1,3 @@
-" set runtimepath^=~/.vim runtimepath+=~/.vim/after
-" let &packpath = &runtimepath
-
 " Temp fix for netrw slow loading. Might not need once version 0.5 is released
 let g:loaded_clipboard_provider = 1
 
@@ -57,18 +54,7 @@ set statusline+=\ %*
 
 " Ale settings
 let g:ale_sign_error = '❱❱'
-" let g:ale_enabled = 0
-let g:ale_sign_column_always = 1
-let g:ale_linters_explicit = 1
-
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\   'ruby': ['rubocop'],
-\}
-
-let g:ale_fixers = {
-\   'ruby': ['rubocop']
-\}
+let g:ale_enabled = 0
 
 "Netrw
 let g:netrw_winsize = 20
