@@ -5,7 +5,7 @@ alias vim=/usr/local/bin/vim
 alias be="bundle exec"
 alias cber="clear ; bundle exec rspec"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
