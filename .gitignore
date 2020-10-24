@@ -32,9 +32,11 @@ Public
 
 .CFUserTextEncoding
 .hushlogin
+.node-gyp/
 .profile
 .ruby-version
 .viminfo
+.yarnrc
 .zprofile
 .zsh_history
 .zcompcache/
