@@ -22,9 +22,7 @@ colorscheme gruvbox
 syntax on
 filetype plugin on
 
-"Backspace through anything in insert mode
-set backspace=indent,eol,start
-
+set autoindent
 set colorcolumn=100
 set belloff=all
 set tabstop=2 softtabstop=2
@@ -38,8 +36,13 @@ set relativenumber
 set hlsearch
 set cursorline
 set cursorlineopt=number
-set mouse+=a
-" let &t_SI.="\e[5 q" "SI = INSERT mode
+
+"Backspace through anything in insert mode
+set backspace=indent,eol,start
+
+" Change cursor to vertical bar on insert
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
 
 "run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
 set ttimeout ttimeoutlen=30
@@ -51,7 +54,7 @@ set statusline+=\ %f
 set statusline+=\ ››\ %*
 set statusline+=%#CursorLine#
 set statusline+=\ %*
-set statusline+=%#StatusLineTerm#
+set statusline+=%#DiffChange#
 set statusline+=%(\ \ %M%R\ \ %)
 set statusline+=%#CursorLine#
 set statusline+=%=

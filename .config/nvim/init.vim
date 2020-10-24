@@ -7,6 +7,7 @@ if has('termguicolors')
   set termguicolors
 endif
 
+let g:ruby_host_prog = '~/.rbenv/versions/2.5.3/bin/neovim-ruby-host'
 " Uncomment this to check highlight groups
 " Place cursor over word and hit shift-c
 
@@ -21,6 +22,7 @@ endif
 set background=dark
 colorscheme gruvbox 
 
+set autoindent
 set colorcolumn=100
 set tabstop=2 softtabstop=2
 set shiftwidth=2
@@ -30,7 +32,6 @@ set nowrap
 set noswapfile
 set number
 set relativenumber                    
-set mouse+=a
 
 "run this command to see availible colors :so $VIMRUNTIME/syntax/hitest.vim
 " set ttimeout ttimeoutlen=30
