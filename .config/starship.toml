@@ -25,7 +25,8 @@ disabled = true
 disabled = true
 
 [ruby]
-format = "‒ [RUBY $version ](red bold)"
+format = "[RUBY $version ](red bold)"
+# format = "‒ [RUBY $version ](red bold)"
 
 [rust]
 disabled = true
