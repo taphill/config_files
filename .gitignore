@@ -30,9 +30,12 @@ Public
 .vim/.netrwhist
 .config/nvim/.netrwhist
 
+.bash_history
 .CFUserTextEncoding
+.docker
 .hushlogin
 .node-gyp/
+.node_repl_history
 .profile
 .ruby-version
 .viminfo
@@ -42,3 +45,4 @@ Public
 .zcompcache/
 .zcompdump
 
+getting-started
