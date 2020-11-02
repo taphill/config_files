@@ -36,6 +36,7 @@ set relativenumber
 set hlsearch
 set cursorline
 set cursorlineopt=number
+set rtp+=/usr/local/opt/fzf
 
 "Backspace through anything in insert mode
 set backspace=indent,eol,start
@@ -82,7 +83,6 @@ set path+=**
 
 "Display all matching files when we tab complete
 set wildmenu
-set wildmode=list:longest,full
 
 "Emmet shortcuts
 let g:user_emmet_mode = 'n'
@@ -109,7 +109,9 @@ vnoremap ,ra "hy:%s/<C-r>h//g<left><left>
 
 "Vim-Fugitive mappings
 nnoremap <space>g :Git<space>
-nnoremap ,gs :Git<CR>
+
+"Vim-FZF mappings
+nnoremap <space>f :FZF<CR>
 
 "Vim-Rails mappings
 nnoremap ,em :Emodel<space>
