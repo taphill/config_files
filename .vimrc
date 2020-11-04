@@ -36,6 +36,7 @@ set relativenumber
 set hlsearch
 set cursorline
 set cursorlineopt=number
+
 set rtp+=/usr/local/opt/fzf
 
 "Backspace through anything in insert mode
@@ -112,6 +113,7 @@ nnoremap <space>g :Git<space>
 
 "Vim-FZF mappings
 nnoremap <space>f :FZF<CR>
+nnoremap <space>? :GFiles?<CR>
 
 "Vim-Rails mappings
 nnoremap ,em :Emodel<space>
