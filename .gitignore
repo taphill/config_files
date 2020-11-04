@@ -21,6 +21,7 @@ Public
 .local
 .netrc
 .npm
+.nvm
 .psql_history
 .rbenv
 .rustup
