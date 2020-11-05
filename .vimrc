@@ -120,17 +120,16 @@ nnoremap ,em :Emodel<space>
 nnoremap ,ev :Eview<space>
 nnoremap ,ec :Econtroller<space>
 nnoremap ,es :Espec<space>
-nnoremap ,em :Emodel<space>
 
+nnoremap ,vm :Vmodel<space>
 nnoremap ,vv :Vview<space>
 nnoremap ,vc :Vcontroller<space>
 nnoremap ,vs :Vspec<space>
-nnoremap ,vm :Vmodel<space>
 
+nnoremap ,sm :Smodel<space>
 nnoremap ,sv :Sview<space>
 nnoremap ,sc :Scontroller<space>
 nnoremap ,ss :Sspec<space>
-nnoremap ,sm :Smodel<space>
 
 "Code Snippets
 nnoremap ,b :-1read $HOME/.vim/.ruby_snippets/.pry.rb<CR>
