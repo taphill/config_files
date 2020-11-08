@@ -84,6 +84,7 @@ set path+=**
 
 "Display all matching files when we tab complete
 set wildmenu
+set wildmode=list:longest,full
 
 "Emmet shortcuts
 let g:user_emmet_mode = 'n'
