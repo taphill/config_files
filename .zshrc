@@ -11,6 +11,7 @@ alias co="git branch | fzf --header 'Checkout' | xargs git checkout"
 alias track="git branch -a | fzf --header 'Track Branch' | xargs git checkout --track"
 
 export EDITOR=vim
+export TERM=xterm-256color
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -26,6 +27,9 @@ function edit() {
       ;;
     (zsh)
       eval "$EDITOR ~/.zshrc"
+      ;;
+    (tmux)
+      eval "$EDITOR ~/.tmux.conf"
       ;;
     (alacritty)
       eval "$EDITOR ~/.alacritty.yml"
