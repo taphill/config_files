@@ -13,6 +13,7 @@ alias track="git branch -a | fzf --header 'Track Branch' | xargs git checkout --
 
 export EDITOR=vim
 export TERM=xterm-256color
+export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -37,6 +38,9 @@ function edit() {
       ;;
     (starship)
       eval "$EDITOR ~/.config/starship.toml"
+      ;;
+    (rg)
+      eval "$EDITOR ~/.ripgreprc"
       ;;
   esac
 }
