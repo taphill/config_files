@@ -74,7 +74,7 @@ command! -bang -nargs=? -complete=dir Files
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
-  \   fzf#vim#with_preview(), <bang>0)
+  \   fzf#vim#with_preview({'options': ['--color', 'hl:10,hl+:10']}), <bang>0)
 
 "Netrw
 let g:netrw_winsize = 20
@@ -125,6 +125,7 @@ nnoremap <space>g :Git<space>
 "Vim-FZF mappings
 nnoremap <space>f :FZF<CR>
 nnoremap <space>? :GFiles?<CR>
+nnoremap <space>s :Rg<CR>
 
 "Vim-Rails mappings
 nnoremap ,em :Emodel<space>
