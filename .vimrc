@@ -17,8 +17,7 @@ endif
 " endfunc
 
 set background=dark
-let g:seoul256_background = 234
-colorscheme seoul256
+colorscheme gruvbox
 
 syntax on
 filetype plugin on

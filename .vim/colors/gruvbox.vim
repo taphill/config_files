@@ -507,19 +507,19 @@ hi! link SpecialKey GruvboxBg2
 call s:HL('Visual',    s:none,  s:bg3, s:invert_selection)
 hi! link VisualNOS Visual
 
-call s:HL('Search',    s:blue, s:bg0, s:inverse)
+call s:HL('Search',    s:yellow, s:bg0, s:inverse)
 call s:HL('IncSearch', s:hls_cursor, s:bg0, s:inverse)
 
 call s:HL('Underlined', s:blue, s:none, s:underline)
 
-call s:HL('StatusLine',   s:bg0, s:fg1, s:inverse)
+call s:HL('StatusLine',   s:bg2, s:fg1, s:inverse)
 call s:HL('StatusLineNC', s:bg1, s:fg4, s:inverse)
 
 " The column separating vertically split windows
 call s:HL('VertSplit', s:bg3, s:vert_split)
 
 " Current match in wildmenu completion
-call s:HL('WildMenu', s:green, s:bg0, s:bold)
+call s:HL('WildMenu', s:blue, s:bg2, s:bold)
 
 " Directory names, special names in listing
 hi! link Directory GruvboxGreenBold
@@ -1244,10 +1244,7 @@ hi! link coffeeBracket GruvboxOrange
 " }}}
 " Ruby: {{{
 
-hi! link rubyAssertion GruvboxBlue
-hi! link rubyHelper GruvboxFg1
 hi! link rubyStringDelimiter GruvboxGreen
-hi! link rubyTestAction GruvboxBlue
 hi! link rubyInterpolationDelimiter GruvboxAqua
 
 " }}}
