@@ -45,6 +45,10 @@ function edit() {
   esac
 }
 
+function macd() {
+  eval "mkdir $1 && cd $1"
+}
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_OPTS="
