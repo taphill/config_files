@@ -17,11 +17,11 @@ style = 'bold purple'
 [git_status]
 style = 'bold red'
 
-[nodejs]
-disabled = true
-
 [python]
 disabled = true
+
+[nodejs]
+format = "[NODE $version](bold green) "
 
 [ruby]
 format = "[RUBY $version ](red bold)"
