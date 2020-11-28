@@ -1246,6 +1246,7 @@ hi! link coffeeBracket GruvboxOrange
 
 hi! link rubyStringDelimiter GruvboxGreen
 hi! link rubyInterpolationDelimiter GruvboxAqua
+hi! link rubyHelper GruvboxFg1
 
 " }}}
 " ObjectiveC: {{{
