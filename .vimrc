@@ -34,8 +34,6 @@ set noswapfile
 set number
 set relativenumber                    
 set hlsearch
-set cursorline
-set cursorlineopt=number
 set regexpengine=1
 
 set rtp+=/usr/local/opt/fzf
