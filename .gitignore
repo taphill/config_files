@@ -39,6 +39,7 @@ Public
 .node_repl_history
 .profile
 .ruby-version
+.travis/
 .viminfo
 .yarnrc
 .zprofile
