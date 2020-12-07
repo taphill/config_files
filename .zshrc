@@ -53,6 +53,7 @@ function macd() {
 
 export FZF_DEFAULT_OPTS="
 --layout=reverse
+--height=40%
 --color=fg:#ebdbb2,bg:#282828,hl:#b8bb26
 --color=fg+:#ebdbb2,bg+:#3c3836,hl+:#b8bb26
 --color=info:#d3869b,prompt:#73fbf1,pointer:#b8e466
