@@ -18,6 +18,7 @@ Public
 .config/gh
 .cargo
 .gem
+.irb_history
 .lesshst
 .local
 .netrc
