@@ -121,7 +121,7 @@ vnoremap ,ra "hy:%s/<C-r>h//g<left><left>
 nnoremap <space>g :Git<space>
 
 "Vim-FZF mappings
-nnoremap <space>f :Files<CR>
+nnoremap <space>f :GFiles<CR>
 nnoremap <space>? :GFiles?<CR>
 nnoremap <space>s :Rg<CR>
 
