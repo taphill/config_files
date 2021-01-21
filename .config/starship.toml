@@ -17,6 +17,12 @@ style = 'bold purple'
 [git_status]
 style = 'bold red'
 
+[elixir]
+format = "[ELIXIR $version](bold purple) "
+
+[package]
+format = "[$symbol$version]($style) "
+
 [python]
 disabled = true
 
