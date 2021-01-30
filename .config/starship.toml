@@ -21,7 +21,7 @@ style = 'bold red'
 format = "[ELIXIR $version](bold purple) "
 
 [package]
-format = "[$symbol$version]($style) "
+disabled = true
 
 [python]
 disabled = true
