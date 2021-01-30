@@ -1092,7 +1092,8 @@ hi! link javaScriptMember GruvboxBlue
 hi! link javaScriptNumber GruvboxPurple
 hi! link javaScriptNull GruvboxPurple
 hi! link javaScriptParens GruvboxFg4
-hi! link jsFuncCall GruvboxBlue
+hi! link jsFuncCall GruvboxAqua
+hi! link jsArrowFunction GruvboxFg4
 hi! link jsFuncBraces GruvboxFg4
 hi! link jsRepeatBraces GruvboxFg4
 hi! link jsIfElseBraces GruvboxFg4
