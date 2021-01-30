@@ -1085,13 +1085,19 @@ hi! link cssGeneratedContentProp GruvboxAqua
 " }}}
 " JavaScript: {{{
 
-hi! link javaScriptBraces GruvboxFg1
+hi! link javaScriptBraces GruvboxFg4
 hi! link javaScriptFunction GruvboxAqua
 hi! link javaScriptIdentifier GruvboxRed
 hi! link javaScriptMember GruvboxBlue
 hi! link javaScriptNumber GruvboxPurple
 hi! link javaScriptNull GruvboxPurple
-hi! link javaScriptParens GruvboxFg3
+hi! link javaScriptParens GruvboxFg4
+hi! link jsFuncCall GruvboxBlue
+hi! link jsFuncBraces GruvboxFg4
+hi! link jsRepeatBraces GruvboxFg4
+hi! link jsIfElseBraces GruvboxFg4
+hi! link jsBrackets GruvboxFg4
+hi! link jsNoise GruvboxFg4
 
 " }}}
 " YAJS: {{{
