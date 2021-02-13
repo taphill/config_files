@@ -1,6 +1,12 @@
+[submodule "emmet"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/emmet
+	url = https://github.com/mattn/emmet-vim
 [submodule "fzf.vim"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "indentLine"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/indentLine
+	url = https://github.com/Yggdroot/indentLine
 [submodule "vim-commentary"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-commentary
 	url = https://github.com/tpope/vim-commentary
@@ -13,6 +19,9 @@
 [submodule "vim-rails"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-rails
 	url = https://github.com/tpope/vim-rails
+[submodule "vim-sneak"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-sneak
+	url = https://github.com/justinmk/vim-sneak
 [submodule "vim-surround"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-surround
 	url = https://github.com/tpope/vim-surround
@@ -22,6 +31,3 @@
 [submodule "vim-vinegar"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar
-[submodule "emmet"]
-	path = /Users/taylorphillips/.vim/pack/bundle/opt/emmet
-	url = https://github.com/mattn/emmet-vim
