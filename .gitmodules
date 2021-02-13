@@ -1,0 +1,27 @@
+[submodule "fzf.vim"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "vim-commentary"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "vim-endwise"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-endwise
+	url = https://github.com/tpope/vim-endwise
+[submodule "vim-fugitive"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim-rails"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "vim-surround"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim-unimpaired"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "vim-vinegar"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
+[submodule "emmet"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/emmet
+	url = https://github.com/mattn/emmet-vim
