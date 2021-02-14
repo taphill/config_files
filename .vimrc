@@ -5,6 +5,25 @@ if has('termguicolors')
   set termguicolors
 endif
 
+if &loadplugins
+  packadd! emmet
+  packadd! fzf.vim
+  packadd! indentLine
+  packadd! NERDTree
+  packadd! vim-commentary
+  packadd! vim-devicons
+  packadd! vim-endwise
+  packadd! vim-fugitive
+  packadd! vim-rails
+  packadd! vim-sneak
+  packadd! vim-surround
+  packadd! vim-textobj-entire
+  packadd! vim-textobj-line
+  packadd! vim-textobj-user
+  packadd! vim-unimpaired
+  packadd! vim-vinegar
+endif
+
 " Uncomment this to check highlight groups
 " Place cursor over word and hit shift-c
 
@@ -19,8 +38,8 @@ endif
 set background=dark
 colorscheme gruvbox
 
-syntax on
 filetype plugin on
+syntax on
 
 set autoindent
 set colorcolumn=100
@@ -35,6 +54,7 @@ set number
 set relativenumber                    
 set hlsearch
 set regexpengine=1
+set encoding=UTF-8
 
 set rtp+=/usr/local/opt/fzf
 
@@ -78,6 +98,9 @@ command! -bang -nargs=* Rg
 let g:netrw_winsize = 20
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'                " Hide dot files
 
+"NERDTree
+let NERDTreeMinimalUI=1
+
 "Always show at least one line above/below the cursor
 if !&scrolloff
   set scrolloff=12
@@ -103,7 +126,7 @@ let g:surround_{char2nr('=')} = "<%= \r %>"    " ctrl + s + =
 let g:surround_{char2nr('-')} = "<% \r %>"     " ctrl + s + -
 
 "Key Commands
-nnoremap <space>e :Explore<CR>
+nnoremap <space>e :NERDTreeToggle<CR>
 nnoremap <space>t :tabn<CR>
 nnoremap <space>r :tabp<CR>
 nnoremap <space>h <C-W><C-H>
