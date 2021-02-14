@@ -7,9 +7,15 @@
 [submodule "indentLine"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/indentLine
 	url = https://github.com/Yggdroot/indentLine
+[submodule "NERDTree"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/NERDTree
+	url = https://github.com/preservim/nerdtree
 [submodule "vim-commentary"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "vim-devicons"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
 [submodule "vim-endwise"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-endwise
 	url = https://github.com/tpope/vim-endwise
@@ -25,6 +31,15 @@
 [submodule "vim-surround"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim-textobj-entire"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-textobj-entire
+	url = https://github.com/kana/vim-textobj-entire
+[submodule "vim-textobj-line"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-textobj-line
+	url = https://github.com/kana/vim-textobj-line
+[submodule "vim-textobj-user"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user
 [submodule "vim-unimpaired"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
