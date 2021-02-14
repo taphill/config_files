@@ -7,15 +7,15 @@ window:
     
 font:
   normal:
-    family: Roboto Mono Light for Powerline
+    family: RobotoMono Nerd Font
   bold:
-    family: Roboto Mono for Powerline
+    family: RobotoMono Nerd Font
     style: Bold
   italic:
-    family: Roboto Mono Light for Powerline
+    family: RobotoMono Nerd Font
     style: Light Italic
   bold_italic:
-    family: Roboto Mono Light for Powerline
+    family: RobotoMono Nerd Font
     style: Bold Italic
   use_thin_strokes: false
   size: 18.0
