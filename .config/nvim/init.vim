@@ -1,10 +1,27 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath=&runtimepath
-
-runtime macros/matchit.vim
+let &packpath = &runtimepath
 
 if has('termguicolors')
   set termguicolors
+endif
+
+if &loadplugins
+  packadd! emmet
+  packadd! fzf.vim
+  packadd! indentLine
+  packadd! NERDTree
+  packadd! vim-commentary
+  packadd! vim-devicons
+  packadd! vim-endwise
+  packadd! vim-fugitive
+  packadd! vim-rails
+  packadd! vim-sneak
+  packadd! vim-surround
+  packadd! vim-textobj-entire
+  packadd! vim-textobj-line
+  packadd! vim-textobj-user
+  packadd! vim-unimpaired
+  packadd! vim-vinegar
 endif
 
 " Uncomment this to check highlight groups
@@ -25,6 +42,7 @@ set colorcolumn=100
 set cursorline
 set expandtab
 set nowrap
+set noshowcmd
 set noswapfile
 set number
 set regexpengine=1
@@ -67,6 +85,9 @@ command! -bang -nargs=* Rg
 "Netrw
 let g:netrw_winsize = 20
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'                " Hide dot files
+
+"NERDTree
+let NERDTreeMinimalUI=1
 
 "Always show at least one line above/below the cursor
 if !&scrolloff
