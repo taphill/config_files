@@ -1,6 +1,7 @@
 eval "$(rbenv init -)"
 
-alias vim=/usr/local/bin/vim
+# alias vim=/usr/local/bin/vim
+alias vim=nvim
 
 alias be="bundle exec"
 alias cbe="clear ; bundle exec"
@@ -25,7 +26,7 @@ fi
 function edit() {
   case "$1" in
     (vim)
-      eval "$EDITOR ~/.vimrc"
+      eval "$EDITOR ~/.config/nvim/init.vim"
       ;;
     (zsh)
       eval "$EDITOR ~/.zshrc"
