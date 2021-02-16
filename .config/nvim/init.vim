@@ -110,7 +110,7 @@ let g:surround_{char2nr('=')} = "<%= \r %>"    " ctrl + s + =
 let g:surround_{char2nr('-')} = "<% \r %>"     " ctrl + s + -
 
 "Key Commands
-nnoremap <space>e :Explore<CR>
+nnoremap <space>e :NERDTreeToggle<CR>
 nnoremap <space>t :tabn<CR>
 nnoremap <space>r :tabp<CR>
 nnoremap <space>h <C-W><C-H>
