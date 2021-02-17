@@ -21,6 +21,9 @@ style = 'bold red'
 [elixir]
 format = "[ELIXIR $version](bold purple) "
 
+[java]
+format = "[JAVA $version](bold red) "
+
 [package]
 disabled = true
 
