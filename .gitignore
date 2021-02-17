@@ -37,11 +37,14 @@ Public
 .CFUserTextEncoding
 .docker
 .hushlogin
+.m2
 .NERDTreeBookmarks
 .node-gyp/
 .node_repl_history
 .profile
 .ruby-version
+.sts4
+.tooling
 .travis/
 .viminfo
 .yarnrc
