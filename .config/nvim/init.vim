@@ -10,6 +10,8 @@ if &loadplugins
   packadd! fzf.vim
   packadd! indentLine
   packadd! NERDTree
+  " packadd! nvim-jdtls
+  " packadd! nvim-lspconfig
   packadd! vim-commentary
   packadd! vim-devicons
   packadd! vim-endwise
@@ -23,6 +25,13 @@ if &loadplugins
   packadd! vim-unimpaired
   packadd! vim-vinegar
 endif
+
+" if has('nvim-0.5')
+"   augroup lsp
+"     au!
+"     au FileType java lua require('jdtls').start_or_attach({cmd = {'java-lsp.sh'}})
+"   augroup end
+" endif
 
 " Uncomment this to check highlight groups
 " Place cursor over word and hit shift-c
