@@ -24,6 +24,9 @@ format = "[ELIXIR $version](bold purple) "
 [java]
 format = "[JAVA $version](bold red) "
 
+[lua]
+format = "[LUA $version](bold blue) "
+
 [package]
 disabled = true
 
