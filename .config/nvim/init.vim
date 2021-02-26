@@ -12,6 +12,8 @@ if &loadplugins
   packadd! NERDTree
   " packadd! nvim-jdtls
   " packadd! nvim-lspconfig
+  " packadd! vscode-neovim
+  " packadd! colorbuddy.nvim
   packadd! vim-commentary
   packadd! vim-devicons
   packadd! vim-endwise
