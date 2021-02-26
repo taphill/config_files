@@ -52,3 +52,9 @@
 [submodule "nvim-jdtls"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/nvim-jdtls
 	url = https://github.com/mfussenegger/nvim-jdtls
+[submodule "vscode-neovim"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vscode-neovim
+	url = https://github.com/asvetliakov/vscode-neovim
+[submodule "colorbuddy.nvim"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/colorbuddy.nvim
+	url = https://github.com/tjdevries/colorbuddy.nvim
