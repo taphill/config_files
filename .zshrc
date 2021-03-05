@@ -26,7 +26,7 @@ fi
 function edit() {
   case "$1" in
     (vim)
-      eval "$EDITOR ~/.config/nvim/init.vim"
+      eval "$EDITOR ~/.config/nvim/init.lua"
       ;;
     (zsh)
       eval "$EDITOR ~/.zshrc"
@@ -70,5 +70,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # added by travis gem
 [ ! -s /Users/taylorphillips/.travis/travis.sh ] || source /Users/taylorphillips/.travis/travis.sh
+
+# tab multiplexer configuration: https://github.com/austinjones/tab-rs/
+source "/Users/taylorphillips/Library/Application Support/tab/completion/zsh-history.zsh"
+# end tab configuration
 
 eval "$(starship init zsh)"
