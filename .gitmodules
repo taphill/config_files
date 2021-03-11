@@ -76,3 +76,9 @@
 [submodule "telescope-fzy-native.nvim"]
 	path = /Users/taylorphillips/.vim/pack/bundle/opt/telescope-fzy-native.nvim
 	url = https://github.com/nvim-telescope/telescope-fzy-native.nvim
+[submodule "vim-polyglot"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule "sonokai"]
+	path = /Users/taylorphillips/.vim/pack/bundle/opt/sonokai
+	url = https://github.com/sainnhe/sonokai
