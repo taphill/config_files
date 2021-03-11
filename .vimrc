@@ -8,12 +8,14 @@ endif
 if &loadplugins
   packadd! emmet
   packadd! fzf.vim
-  packadd! indentLine
+  " packadd! indentLine
   packadd! NERDTree
+  packadd! sonokai
   packadd! vim-commentary
   packadd! vim-devicons
   packadd! vim-endwise
   packadd! vim-fugitive
+  " packadd! vim-polyglot
   packadd! vim-rails
   packadd! vim-sneak
   packadd! vim-surround
