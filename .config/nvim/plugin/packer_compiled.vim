@@ -32,6 +32,10 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/auto-pairs"
+  },
   ["colorbuddy.nvim"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim"
@@ -47,6 +51,10 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-treesitter-textobjects"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -76,9 +84,49 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
+  ["vim-endwise"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-endwise"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+  },
+  ["vim-javascript"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-javascript"
+  },
+  ["vim-rails"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-rails"
+  },
   ["vim-startify"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-startify"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-surround"
+  },
+  ["vim-textobj-entire"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-textobj-entire"
+  },
+  ["vim-textobj-line"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-textobj-line"
+  },
+  ["vim-textobj-user"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-textobj-user"
+  },
+  ["vim-unimpaired"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-unimpaired"
+  },
+  ["vim-vinegar"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-vinegar"
   }
 }
 
