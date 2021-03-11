@@ -1092,13 +1092,6 @@ hi! link javaScriptMember GruvboxBlue
 hi! link javaScriptNumber GruvboxPurple
 hi! link javaScriptNull GruvboxPurple
 hi! link javaScriptParens GruvboxFg4
-hi! link jsFuncCall GruvboxAqua
-hi! link jsArrowFunction GruvboxFg4
-hi! link jsFuncBraces GruvboxFg4
-hi! link jsRepeatBraces GruvboxFg4
-hi! link jsIfElseBraces GruvboxFg4
-hi! link jsBrackets GruvboxFg4
-hi! link jsNoise GruvboxFg4
 
 " }}}
 " YAJS: {{{
@@ -1189,13 +1182,22 @@ hi! link jsExtendsKeyword GruvboxAqua
 hi! link jsExportDefault GruvboxAqua
 hi! link jsTemplateBraces GruvboxAqua
 hi! link jsGlobalNodeObjects GruvboxFg1
-hi! link jsGlobalObjects GruvboxFg1
+hi! link jsGlobalObjects GruvboxYellow
+hi! link jsObjectKey GruvboxPurple
 hi! link jsFunction GruvboxAqua
-hi! link jsFuncParens GruvboxFg3
-hi! link jsParens GruvboxFg3
+hi! link jsFuncCall GruvboxBlue
+hi! link jsFuncParens GruvboxFg4
+hi! link jsFuncBraces GruvboxFg4
+hi! link jsParens GruvboxFg4
 hi! link jsNull GruvboxPurple
 hi! link jsUndefined GruvboxPurple
 hi! link jsClassDefinition GruvboxYellow
+hi! link jsObjectBraces GruvboxOrange
+hi! link jsArrowFunction GruvboxFg4
+hi! link jsRepeatBraces GruvboxFg4
+hi! link jsIfElseBraces GruvboxFg4
+hi! link jsBrackets GruvboxFg4
+hi! link jsNoise GruvboxFg4
 
 " }}}
 " TypeScript: {{{
@@ -1424,3 +1426,4 @@ endfunction
 " }}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker:
+
