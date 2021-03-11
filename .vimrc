@@ -15,7 +15,7 @@ if &loadplugins
   packadd! vim-devicons
   packadd! vim-endwise
   packadd! vim-fugitive
-  " packadd! vim-polyglot
+  packadd! vim-javascript
   packadd! vim-rails
   packadd! vim-sneak
   packadd! vim-surround
