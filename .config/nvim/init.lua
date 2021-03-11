@@ -10,14 +10,15 @@ local cmd = vim.cmd
 
 -- Disable some built-in plugins we don't want
 local disabled_built_ins = {
-  'gzip', 'man', 'matchit', 'matchparen', 'shada_plugin', 'tarPlugin', 'tar', 'zipPlugin', 'zip'
+  'gzip', 'man', 'shada_plugin', 'tarPlugin', 'tar', 'zipPlugin', 'zip'
 }
-for i = 1, 9 do g['loaded_' .. disabled_built_ins[i]] = 1 end
+for i = 1, 7 do g['loaded_' .. disabled_built_ins[i]] = 1 end
 
 -- Colorscheme
 opt.termguicolors = true
 opt.background = 'dark'
 cmd 'colorscheme gruvbox'
+-- require('colorbuddy').colorscheme('onebuddy')
 
 -- Settings
 opt.expandtab       = true
@@ -60,13 +61,12 @@ opt.statusline = table.concat {
 
 -- Plugin Configs
 require 'nvim-tree-config'
+require 'telescope-config'
 require('nvim_comment').setup()
---require('nvim-treesitter.configs').setup {
---  ensure_installed = {'lua', 'ruby'},
---  highlight = {
---    enable = true
---  }
---}
+-- require'nvim-treesitter.configs'.setup {
+--   ensure_installed = { 'lua' } ,
+--   highlight = { enable = true }
+-- }
 
 -- Mappings
 map('n', '<space>e', ':NvimTreeToggle<CR>')
