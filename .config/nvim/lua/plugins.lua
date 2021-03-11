@@ -1,15 +1,21 @@
-vim.cmd 'packadd paq-nvim'         -- Load package
-local paq = require'paq-nvim'.paq  -- Import module and bind `paq` function
-paq{'savq/paq-nvim', opt=true}     -- Let Paq manage itself
+return require('packer').startup(function()
+  use 'wbthomason/packer.nvim'
 
-paq 'kyazdani42/nvim-web-devicons'
-paq 'kyazdani42/nvim-tree.lua'
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
 
-paq 'nvim-lua/popup.nvim'
-paq 'nvim-lua/plenary.nvim'
-paq 'nvim-telescope/telescope.nvim' --uses popup & plenary
+  use 'mhinz/vim-startify'
 
-paq 'nvim-treesitter/nvim-treesitter'
-paq 'nvim-treesitter/playground'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'} }
+  }
+  use 'nvim-telescope/telescope-fzy-native.nvim'
 
-paq 'terrortylor/nvim-comment'
+  use 'nvim-treesitter/nvim-treesitter'
+
+  use 'terrortylor/nvim-comment'
+
+  use 'tjdevries/colorbuddy.nvim'
+  use 'Th3Whit3Wolf/onebuddy'
+end)
