@@ -64,8 +64,20 @@ require 'nvim-tree-config'
 require 'telescope-config'
 require('nvim_comment').setup()
 -- require'nvim-treesitter.configs'.setup {
---   ensure_installed = { 'lua' } ,
---   highlight = { enable = true }
+--   ensure_installed = { 'javascript', 'lua' } ,
+--   highlight = { enable = true },
+--   textobjects = {
+--     select = {
+--       enable = true,
+--       keymaps = {
+--         -- You can use the capture groups defined in textobjects.scm
+--         ["af"] = "@function.outer",
+--         ["if"] = "@function.inner",
+--         ["ac"] = "@class.outer",
+--         ["ic"] = "@class.inner",
+--       },
+--     },
+--   },
 -- }
 
 -- Mappings
@@ -79,6 +91,23 @@ map('n', '<space>r', ':tabp<CR>')
 map('n', '<space>f', ':Telescope find_files<CR>')
 map('n', '<space>s', ':Telescope live_grep<CR>')
 map('n', '<space>b', ':Telescope buffers<CR>')
+map('n', '<space>g', ':Git<space>')
 map('n', ',ws', ':write <bar> suspend<CR>')
 
 map('v', ',c', ':%y+<CR>')
+
+-- Vim Rails
+map('n', ',em', ':Emodel<space>')
+map('n', ',ev', ':Eview<space>')
+map('n', ',ec', ':Econtroller<space>')
+map('n', ',es', ':Espec<space>')
+
+map('n', ',vm', ':Vmodel<space>')
+map('n', ',vv', ':Vview<space>')
+map('n', ',vc', ':Vcontroller<space>')
+map('n', ',vs', ':Vspec<space>')
+
+map('n', ',sm', ':Smodel<space>')
+map('n', ',sv', ':Sview<space>')
+map('n', ',sc', ':Scontroller<space>')
+map('n', ',ss', ':Sspec<space>')
