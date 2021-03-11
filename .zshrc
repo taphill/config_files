@@ -1,7 +1,6 @@
 eval "$(rbenv init -)"
 
-# alias vim=/usr/local/bin/vim
-alias vim=nvim
+alias vim=/usr/local/bin/vim
 
 alias be="bundle exec"
 alias cbe="clear ; bundle exec"
