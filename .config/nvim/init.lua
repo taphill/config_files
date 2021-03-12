@@ -39,7 +39,7 @@ opt.showbreak       = string.rep(' ', 3) -- Make it so that long lines wrap smar
 -- UI
 opt.colorcolumn     = '100'
 opt.wrap            = false
-opt.cursorline      = true
+opt.cursorline      = false
 opt.number          = true
 opt.rnu             = true
 opt.showcmd         = false
