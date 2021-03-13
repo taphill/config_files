@@ -48,14 +48,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
   },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
-  },
-  ["nvim-treesitter-textobjects"] = {
-    loaded = true,
-    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects"
-  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
@@ -99,10 +91,6 @@ _G.packer_plugins = {
   ["vim-rails"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-rails"
-  },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-startify"
   },
   ["vim-surround"] = {
     loaded = true,
