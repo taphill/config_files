@@ -17,10 +17,12 @@ Public
 .config/configstore
 .config/gh
 .cargo
+.dbshell
 .gem
 .irb_history
 .lesshst
 .local
+.mongorc.js
 .netrc
 .npm
 .nvm
