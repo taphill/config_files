@@ -27,6 +27,7 @@ opt.ttimeoutlen     = 20
 opt.shiftwidth      = 2
 opt.softtabstop     = 2
 opt.smartindent     = true
+opt.splitbelow      = true
 opt.tabstop         = 2
 opt.synmaxcol       = 200
 opt.cmdheight       = 2
