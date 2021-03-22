@@ -18,7 +18,6 @@ for i = 1, 7 do g['loaded_' .. disabled_built_ins[i]] = 1 end
 opt.termguicolors = true
 opt.background = 'dark'
 cmd 'colorscheme gruvbox'
--- require('colorbuddy').colorscheme('onebuddy')
 
 -- Settings
 opt.expandtab       = true
@@ -49,6 +48,10 @@ opt.pumheight       = 15
 opt.scrolloff       = 12
 opt.sidescrolloff   = 5
 
+-- Emmet shortcuts
+g.user_emmet_mode = 'n'
+g.user_emmet_leader_key = ','
+
 -- Status Line
 opt.statusline = table.concat {
     '%#CursorLine#',
@@ -58,6 +61,12 @@ opt.statusline = table.concat {
     '%#DiffChange#',
     '%(  %M%R  %)',
     '%#CursorLine#',
+    '%=',
+    '  %*',
+    ' ::',
+    ' %{FugitiveStatusline()}',
+    ' ::',
+    ' %*'
 }
 
 -- Plugin Configs
