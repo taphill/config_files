@@ -36,9 +36,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/auto-pairs"
   },
-  ["colorbuddy.nvim"] = {
+  ["emmet-vim"] = {
     loaded = true,
-    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim"
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/emmet-vim"
   },
   ["nvim-comment"] = {
     loaded = true,
@@ -51,10 +51,6 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
-  },
-  onebuddy = {
-    loaded = true,
-    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/onebuddy"
   },
   ["packer.nvim"] = {
     loaded = true,

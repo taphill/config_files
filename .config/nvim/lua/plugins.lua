@@ -15,15 +15,14 @@ return require('packer').startup(function()
 
   use 'terrortylor/nvim-comment'
 
-  use 'tjdevries/colorbuddy.nvim'
-  use 'Th3Whit3Wolf/onebuddy'
-
   -- Maybe I can delete some of these once treesitter is working?
   use 'jiangmiao/auto-pairs'
   use 'pangloss/vim-javascript'
   use 'kana/vim-textobj-entire'
   use 'kana/vim-textobj-line'
   use 'kana/vim-textobj-user'
+
+  use 'mattn/emmet-vim'
 
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
