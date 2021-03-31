@@ -6,3 +6,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # added by travis gem
 [ ! -s /Users/taylorphillips/.travis/travis.sh ] || source /Users/taylorphillips/.travis/travis.sh
+source "$HOME/.cargo/env"
