@@ -15,6 +15,8 @@ return require('packer').startup(function()
 
   use 'terrortylor/nvim-comment'
 
+  use 'segeljakt/vim-silicon'
+
   -- Maybe I can delete some of these once treesitter is working?
   use 'jiangmiao/auto-pairs'
   use 'pangloss/vim-javascript'

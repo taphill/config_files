@@ -88,6 +88,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-rails"
   },
+  ["vim-silicon"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-silicon"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-surround"
