@@ -1,16 +1,15 @@
 [user]
-	name = Taylor Phillips
-	email = taylorscottphillips@gmail.com
+  name = Taylor Phillips
+  email = taylorscottphillips@gmail.com
 [alias]
-	s = status
+  s = status
   a = add
   c = commit -m
   b = branch
-
   co = checkout
   cob = checkout -b
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
