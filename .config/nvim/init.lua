@@ -48,10 +48,6 @@ opt.pumheight       = 15
 opt.scrolloff       = 12
 opt.sidescrolloff   = 5
 
--- Emmet shortcuts
-g.user_emmet_mode = 'n'
-g.user_emmet_leader_key = ','
-
 -- Status Line
 opt.statusline = table.concat {
     '%#CursorLine#',
@@ -90,21 +86,9 @@ require('nvim_comment').setup()
 --   },
 -- }
 
--- Mappings
-map('n', '<space>e', ':NvimTreeToggle<CR>')
-map('n', '<space>h', '<C-W><C-H>')
-map('n', '<space>j', '<C-W><C-J>')
-map('n', '<space>k', '<C-W><C-K>')
-map('n', '<space>l', '<C-W><C-L>')
-map('n', '<space>t', ':tabn<CR>')
-map('n', '<space>r', ':tabp<CR>')
-map('n', '<space>f', ':Telescope find_files<CR>')
-map('n', '<space>s', ':Telescope live_grep<CR>')
-map('n', '<space>b', ':Telescope buffers<CR>')
-map('n', '<space>g', ':Git<space>')
-map('n', ',ws', ':write <bar> suspend<CR>')
-
-map('v', ',c', ':%y+<CR>')
+-- Emmet shortcuts
+g.user_emmet_mode = 'n'
+g.user_emmet_leader_key = ','
 
 -- Vim Rails
 map('n', ',em', ':Emodel<space>')
@@ -121,3 +105,19 @@ map('n', ',sm', ':Smodel<space>')
 map('n', ',sv', ':Sview<space>')
 map('n', ',sc', ':Scontroller<space>')
 map('n', ',ss', ':Sspec<space>')
+
+-- Mappings
+map('n', '<space>e', ':NvimTreeToggle<CR>')
+map('n', '<space>h', '<C-W><C-H>')
+map('n', '<space>j', '<C-W><C-J>')
+map('n', '<space>k', '<C-W><C-K>')
+map('n', '<space>l', '<C-W><C-L>')
+map('n', '<space>t', ':tabn<CR>')
+map('n', '<space>r', ':tabp<CR>')
+map('n', '<space>f', ':Telescope find_files<CR>')
+map('n', '<space>s', ':Telescope live_grep<CR>')
+map('n', '<space>b', ':Telescope buffers<CR>')
+map('n', '<space>g', ':Git<space>')
+map('n', ',ws', ':write <bar> suspend<CR>')
+
+map('v', ',c', ':%y+<CR>')
