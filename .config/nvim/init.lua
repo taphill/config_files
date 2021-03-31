@@ -68,6 +68,7 @@ opt.statusline = table.concat {
 -- Plugin Configs
 require 'nvim-tree-config'
 require 'telescope-config'
+require 'silicon_config'
 require('nvim_comment').setup()
 -- require'nvim-treesitter.configs'.setup {
 --   ensure_installed = { 'javascript', 'lua' } ,
