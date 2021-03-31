@@ -1188,6 +1188,8 @@ hi! link jsFunction GruvboxAqua
 hi! link jsFuncCall GruvboxBlue
 hi! link jsFuncParens GruvboxFg4
 hi! link jsFuncBraces GruvboxFg4
+hi! link jsSwitchBraces GruvboxFg4
+hi! link jsClassBraces GruvboxOrange
 hi! link jsParens GruvboxFg4
 hi! link jsNull GruvboxPurple
 hi! link jsUndefined GruvboxPurple
