@@ -1,5 +1,5 @@
 -- Setup
-require 'plugins'
+require 'plugins/init'
 
 local utils = require('utils')
 local map = utils.map
@@ -66,26 +66,11 @@ opt.statusline = table.concat {
 }
 
 -- Plugin Configs
-require 'nvim-tree-config'
-require 'telescope-config'
-require 'silicon_config'
-require('nvim_comment').setup()
--- require'nvim-treesitter.configs'.setup {
---   ensure_installed = { 'javascript', 'lua' } ,
---   highlight = { enable = true },
---   textobjects = {
---     select = {
---       enable = true,
---       keymaps = {
---         -- You can use the capture groups defined in textobjects.scm
---         ["af"] = "@function.outer",
---         ["if"] = "@function.inner",
---         ["ac"] = "@class.outer",
---         ["ic"] = "@class.inner",
---       },
---     },
---   },
--- }
+require 'plugins/configs/nvim_comment'
+require 'plugins/configs/nvim_tree'
+require 'plugins/configs/silicon'
+require 'plugins/configs/telescope'
+-- require 'plugins/configs/treesitter'
 
 -- Emmet shortcuts
 g.user_emmet_mode = 'n'
