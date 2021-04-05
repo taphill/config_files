@@ -8,10 +8,13 @@ alias cber="clear ; bundle exec rspec"
 alias rcop="clear ; bundle exec rubocop"
 alias routes="rails routes -c"
 
+alias ofd="ls -a | fzf | xargs nvim -o"
+alias ofg="fzf | xargs nvim -o"
+
 alias co="git branch | fzf --header 'Checkout' | xargs git checkout"
 alias track="git branch -a | fzf --header 'Track Branch' | xargs git checkout --track"
 
-export EDITOR=vim
+export EDITOR=nvim
 export TERM=xterm-256color
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
@@ -53,7 +56,7 @@ function macd() {
 
 export FZF_DEFAULT_OPTS="
 --layout=reverse
---height=40%
+--height=20%
 --color=fg:#ebdbb2,bg:#282828,hl:#b8bb26
 --color=fg+:#ebdbb2,bg+:#3c3836,hl+:#b8bb26
 --color=info:#d3869b,prompt:#73fbf1,pointer:#b8e466
