@@ -1,5 +1,9 @@
 eval "$(rbenv init -)"
 
+export EDITOR=nvim
+export TERM=xterm-256color
+export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
+
 alias vim=/usr/local/bin/vim
 
 alias be="bundle exec"
@@ -8,15 +12,11 @@ alias cber="clear ; bundle exec rspec"
 alias rcop="clear ; bundle exec rubocop"
 alias routes="rails routes -c"
 
-alias ofd="ls -a | fzf | xargs nvim -o"
-alias ofg="fzf | xargs nvim -o"
+alias of='nvim "$(fzf)"'
+alias pf='bat "$(fzf)"'
 
 alias co="git branch | fzf --header 'Checkout' | xargs git checkout"
 alias track="git branch -a | fzf --header 'Track Branch' | xargs git checkout --track"
-
-export EDITOR=nvim
-export TERM=xterm-256color
-export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -65,6 +65,9 @@ export FZF_DEFAULT_OPTS="
 --pointer='➜ '
 --marker='✓ '
 "
+
+# Use ripgrep to traverse the file system and ignore hidden files
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
 export BAT_THEME='gruvbox-dark'
 
