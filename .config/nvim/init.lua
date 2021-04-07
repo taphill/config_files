@@ -66,6 +66,7 @@ opt.statusline = table.concat {
 }
 
 -- Plugin Configs
+require 'plugins/configs/fzf'
 require 'plugins/configs/nvim_comment'
 require 'plugins/configs/nvim_tree'
 require 'plugins/configs/silicon'
@@ -100,9 +101,9 @@ map('n', '<space>k', '<C-W><C-K>')
 map('n', '<space>l', '<C-W><C-L>')
 map('n', '<space>t', ':tabn<CR>')
 map('n', '<space>r', ':tabp<CR>')
-map('n', '<space>f', ':Telescope find_files<CR>')
-map('n', '<space>s', ':Telescope live_grep<CR>')
-map('n', '<space>b', ':Telescope buffers<CR>')
+map('n', '<space>f', ':Files<CR>')
+map('n', '<space>s', ':Rg<CR>')
+map('n', '<space>b', ':Buffers<CR>')
 map('n', '<space>g', ':Git<space>')
 map('n', ',ws', ':write <bar> suspend<CR>')
 
