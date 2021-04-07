@@ -70,7 +70,6 @@ require 'plugins/configs/fzf'
 require 'plugins/configs/nvim_comment'
 require 'plugins/configs/nvim_tree'
 require 'plugins/configs/silicon'
-require 'plugins/configs/telescope'
 -- require 'plugins/configs/treesitter'
 
 -- Emmet shortcuts

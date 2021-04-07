@@ -40,9 +40,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/emmet-vim"
   },
+  fzf = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/fzf"
+  },
+  ["fzf.vim"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/fzf.vim"
+  },
   ["nvim-comment"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/nvim-comment"
+  },
+  ["nvim-lspfuzzy"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/nvim-lspfuzzy"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -55,22 +67,6 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/packer.nvim"
-  },
-  ["plenary.nvim"] = {
-    loaded = true,
-    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/plenary.nvim"
-  },
-  ["popup.nvim"] = {
-    loaded = true,
-    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/popup.nvim"
-  },
-  ["telescope-fzy-native.nvim"] = {
-    loaded = true,
-    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/telescope-fzy-native.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ["vim-endwise"] = {
     loaded = true,
