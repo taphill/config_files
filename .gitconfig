@@ -3,10 +3,12 @@
   email = taylorscottphillips@gmail.com
 
 [alias]
-  s = status
   a = add
-  c = commit -m
   b = branch
+  c = commit -m
+  d = diff
+  s = status
+  u = restore --staged
   co = checkout
   cob = checkout -b
 
