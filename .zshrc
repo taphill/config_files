@@ -71,7 +71,7 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
 export BAT_THEME='gruvbox-dark'
 
-export TEALDEER_CONFIG_DIR='/Users/taylorphillips/.config/tealdeer/config.toml'
+export TEALDEER_CONFIG_DIR='~/.config/tealdeer/'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
