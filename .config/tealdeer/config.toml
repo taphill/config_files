@@ -1,0 +1,31 @@
+[style.description]
+underline = false
+bold = true
+
+[style.command_name]
+foreground = "red"
+underline = false
+bold = true
+
+[style.example_text]
+foreground = "green"
+underline = false
+bold = true
+
+[style.example_code]
+foreground = "red"
+underline = false
+bold = true
+
+[style.example_variable]
+foreground = "blue"
+underline = true
+bold = true
+
+[display]
+compact = false
+use_pager = false
+
+[updates]
+auto_update = true
+auto_update_interval_hours = 24
