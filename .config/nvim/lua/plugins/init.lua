@@ -27,6 +27,7 @@ return require('packer').startup(function()
   use 'kana/vim-textobj-entire'
   use 'kana/vim-textobj-line'
   use 'kana/vim-textobj-user'
+  use 'michaeljsmith/vim-indent-object'
 
   use 'mattn/emmet-vim'
 

@@ -76,6 +76,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-fugitive"
   },
+  ["vim-indent-object"] = {
+    loaded = true,
+    path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-indent-object"
+  },
   ["vim-javascript"] = {
     loaded = true,
     path = "/Users/taylorphillips/.local/share/nvim/site/pack/packer/start/vim-javascript"
